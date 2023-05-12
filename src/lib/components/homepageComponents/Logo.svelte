@@ -1,5 +1,5 @@
 <script>
-    export let title;
+
 </script>
 
 <img src="/assets/logowit.png " alt="Logo">
