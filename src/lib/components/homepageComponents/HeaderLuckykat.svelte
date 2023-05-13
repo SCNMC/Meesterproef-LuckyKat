@@ -1,5 +1,5 @@
 <script>
-	import Logo from "./Logo.svelte";
+	import Logo from "./Logos.svelte";
     import Nav from "./Nav.svelte";
 </script>
 
@@ -17,5 +17,6 @@
 		position: relative;
 		z-index: 2;
         background-color: black;
+		padding: .5em .5em;
     }
 </style>
