@@ -39,6 +39,7 @@
 	}
 
 	nav {
+		width: 100vw;
 		position: fixed;
 		display: flex;
 		gap: 2em;

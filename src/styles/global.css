@@ -1,10 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans');
+@import url("https://fonts.cdnfonts.com/css/press-start-2p");
+
 * {
 	padding: 0;
 	margin: 0;
-	font-family: 'Inter', sans-serif;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+body{
+
+}
+
+p{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+	font-family: 'Noto Sans', sans-serif;
+}
+h2{
+	font-family: "Press Start 2P", sans-serif;
+}
+button{
+	background:none;
+	border: none;
+
+}
+a > p{
+	font-family: "Press Start 2P", sans-serif;
+	font-size: 1em;
 }

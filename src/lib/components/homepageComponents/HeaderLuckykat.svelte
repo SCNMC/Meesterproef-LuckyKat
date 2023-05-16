@@ -15,7 +15,7 @@
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
-		z-index: 2;
+
         background-color: black;
 		padding: .5em .5em;
     }
