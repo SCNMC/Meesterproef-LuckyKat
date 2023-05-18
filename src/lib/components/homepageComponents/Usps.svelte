@@ -28,7 +28,8 @@
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 10em;
+		margin-bottom: 8em;
+
 	}
 	section > img {
 		width: 100%;
@@ -46,7 +47,6 @@
 		background-color: white;
 		padding: 1em 1.7em;
 		border-bottom-right-radius: 1em;
-		font-size: 1em;
 	}
 
 	h2::after {
@@ -76,7 +76,7 @@
 		align-items: center;
 		padding: 4em;
 		font-size: 0.8em;
-		gap: 1em;
+		gap: .5em;
 		background: var(--color);
 	}
 
@@ -87,7 +87,7 @@
 	@media (min-width: 40rem) {
 
 		section{
-			margin-bottom: 20em;
+			margin-bottom: 12em;
 		}
 		div {
 			display: grid;
@@ -97,12 +97,15 @@
 		h2 {
 			font-size: 1.5em;
 		}
+		button{
+			font-size: 1em;
+		}
 		
 	}
 
 	@media (min-width: 60rem) {
 		h2 {
-			font-size: 3em;
+			font-size: 2.5em;
 		}
 		p {
 			font-size: 1.5em;

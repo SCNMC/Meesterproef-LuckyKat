@@ -3,6 +3,7 @@
 	import Hero from "$lib/components/homepageComponents/Hero.svelte";
 	import Usps from "$lib/components/homepageComponents/Usps.svelte";
   import Uspsvideo from "$lib/components/homepageComponents/Uspsvideo.svelte";
+  import Collaborations from "$lib/components/homepageComponents/Collaborations.svelte";
 	import * as prismicH from "@prismicio/helpers";
 	export let data;
 	const { document } = data;
@@ -28,6 +29,7 @@
 	uspDescription={document[0].data.description}
 	uspButton={document[0].data.infobutton}
 />
+<Collaborations/>
 
 
 <!-- {/each} -->

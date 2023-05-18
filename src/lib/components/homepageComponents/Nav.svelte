@@ -71,6 +71,7 @@
             display: inline;
 			display: flex;
 			flex-direction: row;
+			gap: 4em;
         }
 }
 </style>
