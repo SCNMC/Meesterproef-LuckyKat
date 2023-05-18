@@ -7,11 +7,14 @@
 	export let textColor = `red`;
 	export let width = `${4}rem`;
 	export let buttonColor = `red`;
+	export let uspVideo;
 </script>
 
 <section>
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
-	<img loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
+	<div class="divie">
+	<iframe src={uspVideo} />
+</div>
 	<div>
 		<p style="--color:{textColor};--width:{width}"
 			>{@html prismicH.asHTML(uspDescription)}</p
@@ -24,16 +27,30 @@
 </section>
 
 <style>
+
+	.divie{
+		position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+	}
+
+	iframe{
+		position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+	}
 	section {
 		/* height: 100vh; */
-		display: flex;
-		flex-direction: column;
+		width: 100%;
 		margin-bottom: 10em;
 	}
-	section > img {
+	img {
 		width: 100%;
-		height: 35vh;
-		object-fit:cover;
+		height: auto;
+		object-fit: cover;
 	}
 
 	div {
@@ -44,9 +61,9 @@
 	h2 {
 		position: absolute;
 		background-color: white;
-		padding: 1em 1.7em;
+		padding: 0.6em 1.5em;
 		border-bottom-right-radius: 1em;
-		font-size: 1em;
+		z-index: 9999;
 	}
 
 	h2::after {
@@ -85,8 +102,7 @@
 	}
 
 	@media (min-width: 40rem) {
-
-		section{
+		section {
 			margin-bottom: 20em;
 		}
 		div {
@@ -95,22 +111,36 @@
 			gap: 0px 0px;
 		}
 		h2 {
-			font-size: 1.5em;
+			font-size: 2.5em;
 		}
-		
 	}
 
 	@media (min-width: 60rem) {
+		
+		.divie{
+			display: grid;
+		position: relative;
+    overflow: hidden;
+	}
+
+	iframe{
+		position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    border: 0;
+	}
+	
 		h2 {
-			font-size: 3em;
+			font-size: 3.5em;
 		}
 		p {
-			font-size: 1.5em;
-			padding:3em;
-
+			font-size: 1.7em;
+			padding: 3em;
 		}
 		section > img {
-			height: 65vh;
+			height: 60vh;
 		}
 		button {
 			font-size: 1.4em;
