@@ -4,6 +4,7 @@
 	export let uspImage;
 	export let uspDescription;
 	export let uspButton;
+	export let uspsecondImage;
 	export let textColor = `red`;
 	export let width = `${4}rem`;
 	export let buttonColor = `red`;
@@ -11,7 +12,11 @@
 
 <section>
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
-	<img loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
+	<section class="images">
+		<img loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
+		<img loading="lazy" src={prismicH.asImageSrc(uspsecondImage)} alt="#" />
+	</section>
+
 	<div>
 		<p style="--color:{textColor};--width:{width}"
 			>{@html prismicH.asHTML(uspDescription)}</p
@@ -28,7 +33,8 @@
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 8em;
+
+		/* margin-bottom: 8em; */
 	}
 	section > img {
 		width: 100%;
@@ -44,10 +50,7 @@
 	h2 {
 		position: absolute;
 		background-color: white;
-		padding: 1em 1.5em;
-		margin-top: -1em;
-		height: 1em;
-
+		padding: 1em 1.7em;
 		border-bottom-right-radius: 1em;
 	}
 
@@ -58,12 +61,13 @@
 		border-style: solid;
 		border-color: inherit;
 		width: 2rem;
-		height: 1rem;
+		height: 2rem;
 		border-top-left-radius: 1.6rem;
 		box-shadow: -0.29rem -0.7rem 0 0.27rem;
+		top: 0;
 		right: -2rem;
 		color: white;
-		margin-top: -0.1em;
+		margin-top: -0.05em;
 	}
 	p {
 		background: var(--color);
@@ -86,17 +90,14 @@
 	}
 
 	@media (min-width: 40rem) {
-		h2::after {
-			border-width: 2.5px 0 0 1px;
+		.images {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 		}
 
-		section {
-			margin-bottom: 12em;
-		}
 		div {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			align-content: center;
 			gap: 0px 0px;
 		}
 		h2 {
@@ -108,16 +109,6 @@
 	}
 
 	@media (min-width: 60rem) {
-		h2::after {
-			border-width: 4px 0 0 1px;
-			height: 3rem;
-			width: 2.5rem;
-			bottom: 2.8rem;
-			right: -2.5rem;
-		}
-		section {
-			margin-bottom: 20em;
-		}
 		h2 {
 			font-size: 2.9em;
 		}
