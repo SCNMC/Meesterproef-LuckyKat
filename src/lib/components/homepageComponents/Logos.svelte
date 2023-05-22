@@ -2,7 +2,7 @@
 
 </script>
 
-<img src="/assets/logowit.png " alt="Logo">
+<a href="/"><img src="/assets/logowit.png " alt="Logo"></a>
 
 <style>
   

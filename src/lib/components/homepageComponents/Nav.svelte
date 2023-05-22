@@ -9,7 +9,7 @@
 </script>
 <div>
     <ul>
-		<NavLink  link='/' text='Work'  />
+		<NavLink  link='/Work' text='Work'  />
 		<NavLink link='/' text='About us'  />
 		<NavLink link='/' text='Contact'  />
 		

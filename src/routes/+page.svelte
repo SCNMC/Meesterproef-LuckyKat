@@ -14,21 +14,27 @@
 </script>
 
 <HeaderLuckykat />
-<Hero />
+<Hero 
+heroTitle="Luckykat"
+heroLogo="/assets/logogeel.png"
+heroDescription="Ignite Your Online Presence: Unleashing Social Media's Power!"
+heroButton="Scroll down"
+buttonImage ="/assets/scrolldown.png"
+/>
 <!-- {#each data.document as data} -->
-<Usps
+<Uspsvideo
 	textColor="#6A5ACD"
 	buttonColor="#FFDB58"
 	uspTitle={document[1].data.title}
-	uspImage={document[1].data.image}
+	uspVideo={document[0].data.video.embed_url}
 	uspDescription={document[1].data.description}
 	uspButton={document[1].data.infobutton}
 />
-<Usps
+<Uspsvideo
 	textColor="#008080"
 	buttonColor="#FF6F61"
 	uspTitle={document[2].data.title}
-	uspImage={document[2].data.image}
+uspVideo={document[2].data.video.embed_url}
 	uspDescription={document[2].data.description}
 	uspButton={document[2].data.infobutton}
 />

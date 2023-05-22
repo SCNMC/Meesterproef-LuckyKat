@@ -22,7 +22,7 @@ p{
 header{
 	font-family: 'Noto Sans', sans-serif;
 }
-h2 ,h3{
+h1, h2 ,h3{
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }
@@ -35,11 +35,12 @@ a > p{
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }
-a{
+button > a{
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }
 li{
 	list-style: none;
 	font-family: 'Noto Sans', sans-serif;
+	
 }

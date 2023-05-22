@@ -1,11 +1,21 @@
+<script>
+	export let heroTitle;
+	export let heroLogo;
+	export let heroDescription;
+	export let heroButton;
+	export let buttonImage;
+
+</script>
+
+
 <section>
 	<div class="logo">
-		<h1>Luckykat</h1>
-		<img src="/assets/logogeel.png" alt="logo geel" />
+		<h1>{heroTitle}</h1>
+		<img src={heroLogo} alt="logo geel" />
     </div>
-	<p>Ignite Your Online Presence: Unleashing Social Media's Power! </p>
-	<button>Scroll down</button>
-    <a href=""><img src="/assets/scrolldown.png" alt=""></a>
+	<p>{heroDescription} </p>
+	<button>{heroButton}</button>
+    <a href=""><img src={buttonImage} alt=""></a>
 </section>
 
 <style>
@@ -27,7 +37,6 @@
 	}
 
 	h1 {
-		font-family: "Press Start 2P", sans-serif;
 		font-size: 2em;
 	}
     section p{

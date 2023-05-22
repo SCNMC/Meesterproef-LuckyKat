@@ -68,7 +68,7 @@
 	p {
 		background: var(--color);
 		color: white;
-		padding: 2em;
+		padding: 1.5em;
 	}
 	button {
 		display: flex;
