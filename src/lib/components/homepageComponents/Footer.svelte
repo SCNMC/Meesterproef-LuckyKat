@@ -1,4 +1,6 @@
 <footer>
+
+ <div>
 	<ul>
 		<p>Lucykat</p>
 		<li> Kamelenspoor 80-5 </li>
@@ -22,27 +24,32 @@
 		<li><img src="/assets/Twitter.png" alt="twitter" /></li>
 		<li><img src="/assets/Linkedin.png" alt="linkedin" /></li>
 	</ul>
+</div>
 
 	<img src="/assets/logogeel.png" alt="logo" />
 	<p> All rights reserved Copyright &#169 2023</p>
 </footer>
 
 <style>
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
 	footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		background-color: black;
-		gap: 3em;
 		color: white;
+        gap: 2.5em;
 		padding: 2em;
 	}
 	ul {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
 		gap: 0.5em;
 	}
 	p {
@@ -55,5 +62,32 @@
 	}
 	footer > p {
 		font-size: 0.5em;
+	}
+
+	@media (min-width: 60rem) {
+        p{
+            font-size: 2em;
+        }
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8em;
+            padding: 1em;
+        }
+        li{
+            font-size: 1.2em;
+            text-align: start
+        }
+        footer{
+            gap: 4em;
+    
+        }
+        footer > img{
+            width: 5em;
+        }
+        footer > p{
+            font-size: 0.8em;
+        }
+
 	}
 </style>
