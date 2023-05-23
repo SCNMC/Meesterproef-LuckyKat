@@ -16,7 +16,7 @@
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<div class="divie">
 		<div>
-			<iframe loading="lazy§"
+			<iframe loading="lazy"
 				src={uspVideo}
 				frameborder="0"
 				allow="autoplay; fullscreen; picture-in-picture"
@@ -42,7 +42,6 @@
 		position: relative;
 		overflow: hidden;
 		padding-top: 43%;
-
 		width: 100%;
 	}
 
@@ -68,6 +67,7 @@
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
+	
 	}
 
 	h2 {

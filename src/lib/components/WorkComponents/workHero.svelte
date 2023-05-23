@@ -1,6 +1,6 @@
 <section>
     <h1>Our work </h1>
-    <p>Discover some of the awesome work we delivered</p>
+    <p>Discover awesome work we made</p>
 </section>
 
 <style>
