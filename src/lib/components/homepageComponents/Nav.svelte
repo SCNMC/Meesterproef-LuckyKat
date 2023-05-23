@@ -22,7 +22,7 @@
 	<Animatedhamburgers {open} {onClick} />
     {#if open}
 		<nav transition:fly={{ y: -200, duration: 400 }}>
-			<a transition:fly={{y:-1000, duration:1100}} href="./beoogde-leerresultaten">Work</a>
+			<a transition:fly={{y:-1000, duration:1100}} href="/Work">Work</a>
 			<a transition:fly={{y:-800, duration:1100}} href="./onderwijsleeromgeving">About us</a>
 			<a transition:fly={{y:- 600, duration:1100}}  href="./toetsing">Contact</a>
 		</nav>
