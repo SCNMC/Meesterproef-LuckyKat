@@ -6,12 +6,14 @@
     section{
         display: flex;
         flex-direction: column;
+        margin-bottom: 10em;
     }
  
- @media(min-width:60rem){
+ @media(min-width:50rem){
   section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
   }
  }
 </style>

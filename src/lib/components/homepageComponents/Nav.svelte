@@ -11,7 +11,7 @@
     <ul>
 		<NavLink  link='/Work' text='Work'  />
 		<NavLink link='/' text='About us'  />
-		<NavLink link='/' text='Contact'  />
+		<NavLink link='/Contact' text='Contact'  />
 		
 		<!-- <li>Beoogde leerresultaten</li>
 		<li>Onderwijsleeromgeving</li>
@@ -23,8 +23,8 @@
     {#if open}
 		<nav transition:fly={{ y: -200, duration: 400 }}>
 			<a transition:fly={{y:-1000, duration:1100}} href="/Work">Work</a>
-			<a transition:fly={{y:-800, duration:1100}} href="./onderwijsleeromgeving">About us</a>
-			<a transition:fly={{y:- 600, duration:1100}}  href="./toetsing">Contact</a>
+			<a transition:fly={{y:-800, duration:1100}} href="/">About us</a>
+			<a transition:fly={{y:- 600, duration:1100}}  href="./Contact">Contact</a>
 		</nav>
 	{/if}
 
@@ -51,6 +51,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
+		z-index: 999;
 	}
     nav > a {
 		margin: .5em;

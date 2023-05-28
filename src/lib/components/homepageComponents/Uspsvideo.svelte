@@ -43,6 +43,7 @@
 		overflow: hidden;
 		padding-top: 43%;
 		width: 100%;
+		z-index: -1;
 	}
 
 	iframe {
@@ -75,7 +76,7 @@
 		background-color: white;
 		padding: 1em 1.5em;
 		border-bottom-right-radius: 1em;
-		z-index: 9999;
+		z-index: 996;
 		margin-top: -1em;
 		height: 1em;
 	}

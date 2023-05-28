@@ -29,7 +29,7 @@ h1, h2 ,h3{
 button{
 	background:none;
 	border: none;
-
+	font-family: "Press Start 2P", sans-serif;
 }
 a > p{
 	font-family: "Press Start 2P", sans-serif;
@@ -42,5 +42,11 @@ button > a{
 li{
 	list-style: none;
 	font-family: 'Noto Sans', sans-serif;
-	
+}
+label{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+input::placeholder{
+	font-family: "Press Start 2P", sans-serif;
 }

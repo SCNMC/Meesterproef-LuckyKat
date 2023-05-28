@@ -13,6 +13,12 @@
         height: 70vh;
         gap: 1.5em;
     }
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1em;
+    }
 
 
 
@@ -28,7 +34,7 @@
 
     @media(min-width:60rem){
         h1{
-            font-size: 6em;
+            font-size: 4em;
         }
     	p {
 			font-size: 2.5em;
