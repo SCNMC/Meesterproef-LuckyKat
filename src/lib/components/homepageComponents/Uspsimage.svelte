@@ -10,7 +10,7 @@
 	export let buttonColor = `red`;
 </script>
 
-<section>
+<section class="container">
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<section class="images">
 		<img loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
@@ -29,6 +29,9 @@
 </section>
 
 <style>
+
+
+	
 	section {
 		/* height: 100vh; */
 		display: flex;
@@ -40,6 +43,7 @@
 		width: 100%;
 		height: 35vh;
 		object-fit: cover;
+		
 	}
 
 	div {
