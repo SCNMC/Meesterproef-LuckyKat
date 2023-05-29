@@ -8,7 +8,33 @@
 	export let width = `${4}rem`;
 	export let buttonColor = `red`;
 	export let uspVideo;
+
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 	
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);  
+
+gsap.utils.toArray(".divie").forEach(function(container) {
+    let videos = container.querySelector("iframe");
+  
+    let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          pin: false,
+        },
+      }); 
+      tl.from(videos, {
+        yPercent: -15,
+        ease: "none",
+      }).to(videos, {
+        yPercent: 8,
+        ease: "none",
+      }); 
+  });
+	});
 
 	
 </script>
@@ -27,7 +53,7 @@
 			/></div
 		>
 	</div>
-	<div class="lolo">
+	<div class="info">
 		<p style="--color:{textColor};--width:{width}"
 			>{@html prismicH.asHTML(uspDescription)}</p
 		>
@@ -78,7 +104,7 @@ padding-bottom: 43%;
 		background-color: white;
 		padding: 1em 1.5em;
 		border-bottom-right-radius: 1em;
-		z-index: 9999;
+		z-index: -1;
 		margin-top: -1em;
 		height: 1em;
 	}
@@ -140,8 +166,8 @@ padding-bottom: 43%;
 
 	@media (min-width: 75rem) {
 
-		.lolo{
-			margin-top: -8em;
+		.info{
+			margin-top: -12em;
 		}
 		h2 {
 			font-size: 2.9em;

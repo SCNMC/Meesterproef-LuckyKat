@@ -85,12 +85,12 @@ gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-
+z-index: -4;
 		/* margin-bottom: 8em; */
 	}
 	section > img {
 		width: 100%;
-		height: 35vh;
+		height: 45vh;
 		object-fit: cover;
 		position: relative;
 		
@@ -110,6 +110,7 @@ gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
 		padding: 1em 1.5em;
 		margin-top: -1em;
 		height: 1em;
+		z-index: 3;
 	}
 
 	h2::after {
@@ -129,7 +130,8 @@ gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
 	p {
 		background: var(--color);
 		color: white;
-		padding: 2em;
+		padding: 1.5em;
+		text-align: center;
 	}
 	button {
 		display: flex;
@@ -182,8 +184,9 @@ gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
 			right: -2.5rem;
 		}
 		p {
-			font-size: 1.5em;
-			padding: 3em;
+			text-align: center;
+			font-size: 1.4em;
+			padding: 2.5em;
 		}
 		section > img {
 			height: 65vh;
