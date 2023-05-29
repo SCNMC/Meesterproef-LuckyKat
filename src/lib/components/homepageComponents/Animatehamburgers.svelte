@@ -47,7 +47,7 @@
 	svg {
 		transition: transform var(--transition-duration);
 		position: relative;
-		z-index: 1;
+		z-index: 9999999;
 		color: white;
 
 	}

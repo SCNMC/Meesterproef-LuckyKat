@@ -11,5 +11,7 @@
     li{
         margin-bottom: .5em;
         color: white;
+        font-size: 1.2em;
+       
     }
 </style>

@@ -10,7 +10,34 @@
 	import * as prismicH from "@prismicio/helpers";
 	export let data;
 	const { document } = data;
-	console.log(document);
+
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);  
+
+gsap.utils.toArray(".wrapper").forEach(function(container) {
+    let image = container.querySelector("img");
+  
+    let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          pin: false,
+        },
+      }); 
+      tl.from(image, {
+        yPercent: -25,
+        ease: "none",
+      }).to(image, {
+        yPercent: 8,
+        ease: "none",
+      }); 
+  });
+	});
 </script>
 
 <HeaderLuckykat />

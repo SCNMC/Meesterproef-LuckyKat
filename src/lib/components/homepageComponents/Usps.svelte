@@ -9,7 +9,7 @@
 	export let buttonColor = `red`;
 </script>
 
-<section>
+<section class="wrapper">
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<img loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
 	<div>
@@ -24,25 +24,37 @@
 </section>
 
 <style>
+
+	.wrapper{
+		position: relative;
+    overflow: hidden;
+	}
+
 	section {
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 8em;
+		margin-bottom: 15em;
+		z-index: -2;
 	}
 	section > img {
 		width: 100%;
-		height: 35vh;
+		height: 45vh;
 		object-fit: cover;
+		position: relative;
+
 	}
 
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
+	position:sticky;
+	margin-top: -3.2em;
 	}
 
 	h2 {
 		position: absolute;
+		z-index: 1;
 		background-color: white;
 		padding: 1em 1.5em;
 		margin-top: -1em;
@@ -86,6 +98,11 @@
 	}
 
 	@media (min-width: 40rem) {
+
+		p{
+			padding: 1.5em;
+			text-align: center;
+		}
 		h2::after {
 			border-width: 2.5px 0 0 1px;
 		}
@@ -107,7 +124,7 @@
 		}
 	}
 
-	@media (min-width: 60rem) {
+	@media (min-width: 75rem) {
 		h2::after {
 			border-width: 4px 0 0 1px;
 			height: 3rem;
@@ -115,15 +132,14 @@
 			bottom: 2.8rem;
 			right: -2.5rem;
 		}
-		section {
-			margin-bottom: 20em;
-		}
+
 		h2 {
 			font-size: 2.9em;
 		}
 		p {
-			font-size: 1.5em;
-			padding: 3em;
+			text-align: center;
+			font-size: 1.4em;
+			padding: 2.5em;
 		}
 		section > img {
 			height: 65vh;
