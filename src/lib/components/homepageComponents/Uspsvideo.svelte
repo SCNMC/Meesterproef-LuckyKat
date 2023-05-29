@@ -105,7 +105,7 @@ padding-bottom: 43%;
 		background-color: white;
 		padding: 1em 1.5em;
 		border-bottom-right-radius: 1em;
-		z-index: -1;
+		z-index: 1;
 		margin-top: -1em;
 		height: 1em;
 	}

@@ -23,7 +23,7 @@
     {#if open}
 		<nav transition:fly={{ y: -200, duration: 400 }}>
 			<a transition:fly={{y:-1000, duration:1100}} href="/Work">Work</a>
-			<a transition:fly={{y:-800, duration:1100}} href="/">About us</a>
+			<a transition:fly={{y:-800, duration:1100}} href="./About us">About us</a>
 			<a transition:fly={{y:- 600, duration:1100}}  href="./Contact">Contact</a>
 		</nav>
 	{/if}
@@ -35,7 +35,7 @@
 		list-style: none;
 		padding:1.7em;
 		gap: 2em;
-
+		color: rebeccapurple;
 
 	}
 
