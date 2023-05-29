@@ -53,7 +53,7 @@
 
 	h2 {
 		position: absolute;
-		z-index: 999999;
+		z-index: 9999;
 		background-color: white;
 		padding: 1em 1.5em;
 		margin-top: -1em;
