@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 40vh;
+        height: 45vh;
         gap: 2em;
     }
 
@@ -42,12 +42,16 @@
 
 	}
 
-	@media (min-width: 60rem) {
+	@media (min-width: 75rem) {
         section{
             height: 60vh;
         }
         h3{
             font-size: 2.9em;
+        }
+
+        button{
+            font-size: 1.5em;
         }
         p{
         

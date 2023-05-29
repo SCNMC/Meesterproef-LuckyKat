@@ -34,7 +34,7 @@
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 8em;
+		margin-bottom: 15em;
 	}
 	section > img {
 		width: 100%;
@@ -126,9 +126,7 @@
 			bottom: 2.8rem;
 			right: -2.5rem;
 		}
-		section {
-			margin-bottom: 20em;
-		}
+
 		h2 {
 			font-size: 2.9em;
 		}

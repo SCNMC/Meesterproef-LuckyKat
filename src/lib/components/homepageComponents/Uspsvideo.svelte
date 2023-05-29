@@ -9,6 +9,7 @@
 	export let buttonColor = `red`;
 	export let uspVideo;
 	
+
 	
 </script>
 
@@ -26,7 +27,7 @@
 			/></div
 		>
 	</div>
-	<div>
+	<div class="lolo">
 		<p style="--color:{textColor};--width:{width}"
 			>{@html prismicH.asHTML(uspDescription)}</p
 		>
@@ -41,22 +42,22 @@
 	.divie {
 		position: relative;
 		overflow: hidden;
-		padding-top: 43%;
+padding-bottom: 43%;
 		width: 100%;
 	}
 
 	iframe {
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
 		border: 0;
-		width: inherit;
-		height: inherit;
+		z-index: -3;
 	}
 	section {
+
 		/* height: 100vh; */
 		width: 100%;
-		margin-bottom: 10em;
+		margin-bottom: 15em;
 	}
 	img {
 		width: 100%;
@@ -67,6 +68,8 @@
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
+		margin-top: -2em;
+
 	
 	}
 
@@ -115,9 +118,12 @@
 	}
 
 	@media (min-width: 40rem) {
-		section {
-			margin-bottom: 20em;
+		p{
+			padding: 2.5em;
+			text-align: center;
+	
 		}
+
 		div {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -132,19 +138,24 @@
 		}
 	}
 
-	@media (min-width: 60rem) {
+	@media (min-width: 75rem) {
+
+		.lolo{
+			margin-top: -8em;
+		}
 		h2 {
 			font-size: 2.9em;
 		}
 		p {
-			font-size: 1.7em;
+			text-align: center;
+			font-size: 1.4em;
 			padding: 2.5em;
 		}
 		section > img {
 			height: 60vh;
 		}
 		button {
-			font-size: 1.4em;
+			font-size: 1.2em;
 		}
 		h2::after {
 			border-width: 4px 0 0 1px;

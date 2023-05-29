@@ -33,7 +33,7 @@ gsap.utils.toArray(".wrapper").forEach(function(container) {
         yPercent: -25,
         ease: "none",
       }).to(image, {
-        yPercent: 5,
+        yPercent: 8,
         ease: "none",
       }); 
   });

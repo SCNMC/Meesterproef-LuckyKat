@@ -8,13 +8,59 @@
 	export let textColor = `red`;
 	export let width = `${4}rem`;
 	export let buttonColor = `red`;
+
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);  
+
+gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
+    let image = container.querySelector(".pap");
+  
+    let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          pin: false,
+        },
+      }); 
+      tl.from(image, {
+        yPercent: -25,
+        ease: "none",
+      }).to(image, {
+        yPercent: 9,
+        ease: "none",
+      }); 
+  });
+  gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
+    let image = container.querySelector(".pok");
+  
+    let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          scrub: true,
+          pin: false,
+        },
+      }); 
+      tl.from(image, {
+        yPercent: -25,
+        ease: "none",
+      }).to(image, {
+        yPercent: 9,
+        ease: "none",
+      }); 
+  });
+	});
 </script>
 
-<section class="container">
+<section class="parralax-wrapper">
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<section class="images">
-		<img loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
-		<img loading="lazy" src={prismicH.asImageSrc(uspsecondImage)} alt="#" />
+		<img class="pok" loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
+		<img class="pap" loading="lazy" src={prismicH.asImageSrc(uspsecondImage)} alt="#" />
 	</section>
 
 	<div>
@@ -30,7 +76,10 @@
 
 <style>
 
-
+.parralax-wrapper{
+	position: relative;
+	overflow: hidden;
+}
 	
 	section {
 		/* height: 100vh; */
@@ -43,19 +92,24 @@
 		width: 100%;
 		height: 35vh;
 		object-fit: cover;
+		position: relative;
 		
 	}
 
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
+		position:sticky;
+		margin-top: -3.2em;
 	}
 
 	h2 {
 		position: absolute;
 		background-color: white;
-		padding: 1em 1.7em;
 		border-bottom-right-radius: 1em;
+		padding: 1em 1.5em;
+		margin-top: -1em;
+		height: 1em;
 	}
 
 	h2::after {
@@ -65,13 +119,12 @@
 		border-style: solid;
 		border-color: inherit;
 		width: 2rem;
-		height: 2rem;
+		height: 1rem;
 		border-top-left-radius: 1.6rem;
 		box-shadow: -0.29rem -0.7rem 0 0.27rem;
-		top: 0;
 		right: -2rem;
 		color: white;
-		margin-top: -0.05em;
+		margin-top: -0.1em;
 	}
 	p {
 		background: var(--color);
@@ -94,6 +147,10 @@
 	}
 
 	@media (min-width: 40rem) {
+
+		h2::after {
+			border-width: 2.5px 0 0 1px;
+		}
 		.images {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -115,6 +172,14 @@
 	@media (min-width: 60rem) {
 		h2 {
 			font-size: 2.9em;
+		}
+
+		h2::after {
+			border-width: 4px 0 0 1px;
+			height: 3rem;
+			width: 2.5rem;
+			bottom: 2.8rem;
+			right: -2.5rem;
 		}
 		p {
 			font-size: 1.5em;
