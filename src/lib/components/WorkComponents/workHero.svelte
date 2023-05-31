@@ -20,6 +20,8 @@
     }
     p{
         font-size: 1em;
+    width: 23rem;
+    text-align: left;
     }
 
 
