@@ -1,53 +1,53 @@
 <script>
-// 	import { onMount } from "svelte";
-// 	import { gsap } from "gsap/dist/gsap";
-// 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// 	import { onDestroy } from 'svelte';
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+	import { onDestroy } from 'svelte';
 
-// 	gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger);
 
 
-// 	onMount(() => {
-//   gsap.registerPlugin(ScrollTrigger);
+	onMount(() => {
+  gsap.registerPlugin(ScrollTrigger);
 
-//   const timeline = gsap.timeline();
+  const timeline = gsap.timeline();
 
-//   timeline.to('.poop', {
-//     xPercent: -150,
-//     ease: 'none',
-//     scrollTrigger: {
-//       trigger: '.poop',
-//       pin: '.pap',
-//       start: '45% 45%',
-//       end: '+=2000',
-//       scrub: 3,
-//     },
-//   });
+  timeline.to('.poop', {
+    xPercent: -150,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.poop',
+      pin: '.pap',
+      start: '30% 30%',
+      end: '+=3000',
+      scrub: true,
+    },
+  });
 
-//   timeline.to('.peep', {
-//     xPercent: 150,
-//     ease: 'none',
-//     scrollTrigger: {
-//       trigger: '.peep',
-//       start: '3% 3%',
-//       end: '+=2000',
-//       scrub: 3,
-//     },
-//   });
+  timeline.to('.peep', {
+    xPercent: 150,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.peep',
+      start: '3% 3%',
+      end: '+=3000',
+      scrub: true,
+    },
+  });
 
-//   timeline.play();
+  timeline.play();
 
-//   // Refresh ScrollTrigger on window resize
-//   const refreshScrollTrigger = () => {
-//     ScrollTrigger.refresh();
-//   };
+  // Refresh ScrollTrigger on window resize
+  const refreshScrollTrigger = () => {
+    ScrollTrigger.refresh();
+  };
 
-//   window.addEventListener('resize', refreshScrollTrigger);
-// });
+  window.addEventListener('resize', refreshScrollTrigger);
+});
 	
-// 	onDestroy(() => {
-// 		ScrollTrigger.killAll();
-// 	})
+	onDestroy(() => {
+		ScrollTrigger.killAll();
+	})
 </script>
 
 <section class="pap">
