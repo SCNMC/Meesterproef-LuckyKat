@@ -1,53 +1,53 @@
 <script>
-	import { onMount } from "svelte";
-	import { gsap } from "gsap/dist/gsap";
-	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-	import { onDestroy } from 'svelte';
+// 	import { onMount } from "svelte";
+// 	import { gsap } from "gsap/dist/gsap";
+// 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// 	import { onDestroy } from 'svelte';
 
-	gsap.registerPlugin(ScrollTrigger);
+// 	gsap.registerPlugin(ScrollTrigger);
 
 
-	onMount(() => {
-  gsap.registerPlugin(ScrollTrigger);
+// 	onMount(() => {
+//   gsap.registerPlugin(ScrollTrigger);
 
-  const timeline = gsap.timeline();
+//   const timeline = gsap.timeline();
 
-  timeline.to('.poop', {
-    xPercent: -150,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.poop',
-      pin: '.pap',
-      start: '45% 45%',
-      end: '+=2000',
-      scrub: .5,
-    },
-  });
+//   timeline.to('.poop', {
+//     xPercent: -150,
+//     ease: 'none',
+//     scrollTrigger: {
+//       trigger: '.poop',
+//       pin: '.pap',
+//       start: '45% 45%',
+//       end: '+=2000',
+//       scrub: 3,
+//     },
+//   });
 
-  timeline.to('.peep', {
-    xPercent: 150,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.peep',
-      start: '3% 3%',
-      end: '+=2000',
-      scrub: .5,
-    },
-  });
+//   timeline.to('.peep', {
+//     xPercent: 150,
+//     ease: 'none',
+//     scrollTrigger: {
+//       trigger: '.peep',
+//       start: '3% 3%',
+//       end: '+=2000',
+//       scrub: 3,
+//     },
+//   });
 
-  timeline.play();
+//   timeline.play();
 
-  // Refresh ScrollTrigger on window resize
-  const refreshScrollTrigger = () => {
-    ScrollTrigger.refresh();
-  };
+//   // Refresh ScrollTrigger on window resize
+//   const refreshScrollTrigger = () => {
+//     ScrollTrigger.refresh();
+//   };
 
-  window.addEventListener('resize', refreshScrollTrigger);
-});
+//   window.addEventListener('resize', refreshScrollTrigger);
+// });
 	
-	onDestroy(() => {
-		ScrollTrigger.killAll();
-	})
+// 	onDestroy(() => {
+// 		ScrollTrigger.killAll();
+// 	})
 </script>
 
 <section class="pap">
@@ -59,7 +59,7 @@
 		<img  src="/assets/Elisestore.png" alt="">
 		<img  src="/assets/fifa.png" alt="">
 		<img  src="/assets/goal.png" alt="">
-		<img lsrc="/assets/kampioenen.png" alt="">
+		<img src="/assets/kampioenen.png" alt="">
 	
 
 	</div>
@@ -68,7 +68,7 @@
 		<img   src="/assets/nike.png" alt="">
 		<img  src="/assets/olympus.png" alt="">
 		<img   src="/assets/papa-johns.png" alt="">
-		<img  lsrc="/assets/skincarew.png" alt="">
+		<img  src="/assets/skincarew.png" alt="">
 		<img  src="/assets/studio-a12.png" alt="">
 		<img   src="/assets/taco.png" alt="">
 
@@ -105,9 +105,11 @@ z-index: -5;
 	}
 	.poop{
 	transform: translateX(50%);
+	will-change: transform, opacity;
 	}
 	.peep{
 		transform: translateX(-50%);
+		will-change: transform, opacity;
 	}
 
 
