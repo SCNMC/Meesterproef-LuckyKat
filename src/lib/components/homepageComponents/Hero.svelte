@@ -47,6 +47,7 @@
 
 	h1 {
 		font-size: 2em;
+		font-weight: 700;
 	}
 	section p {
 		text-align: center;
