@@ -53,24 +53,24 @@
 <section class="pap">
 	<h2>Collaborations</h2>
 	<div class="poop">
-		<img  loading="lazy" src="/assets/Alpha.png" alt="">
-		<img loading="lazy" src="/assets/dominos.png" alt="">
-		<img  loading="lazy" src="/assets/dtc.png" alt="">
-		<img loading="lazy" src="/assets/Elisestore.png" alt="">
-		<img loading="lazy" src="/assets/fifa.png" alt="">
-		<img  loading="lazy"src="/assets/goal.png" alt="">
-		<img loading="lazy" src="/assets/kampioenen.png" alt="">
+		<img   src="/assets/Alpha.png" alt="">
+		<img  src="/assets/dominos.png" alt="">
+		<img  src="/assets/dtc.png" alt="">
+		<img  src="/assets/Elisestore.png" alt="">
+		<img  src="/assets/fifa.png" alt="">
+		<img  src="/assets/goal.png" alt="">
+		<img lsrc="/assets/kampioenen.png" alt="">
 	
 
 	</div>
 	<div class="peep">
-		<img  loading="lazy" src="/assets/niblr.png" alt="">
-		<img  loading="lazy" src="/assets/nike.png" alt="">
-		<img  loading="lazy" src="/assets/olympus.png" alt="">
-		<img  loading="lazy" src="/assets/papa-johns.png" alt="">
-		<img  loading="lazy" src="/assets/skincarew.png" alt="">
-		<img  loading="lazy" src="/assets/studio-a12.png" alt="">
-		<img  loading="lazy" src="/assets/taco.png" alt="">
+		<img   src="/assets/niblr.png" alt="">
+		<img   src="/assets/nike.png" alt="">
+		<img  src="/assets/olympus.png" alt="">
+		<img   src="/assets/papa-johns.png" alt="">
+		<img  lsrc="/assets/skincarew.png" alt="">
+		<img  src="/assets/studio-a12.png" alt="">
+		<img   src="/assets/taco.png" alt="">
 
 	</div>
 </section>
