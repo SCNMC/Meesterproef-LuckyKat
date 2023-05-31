@@ -14,7 +14,7 @@
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<div class="divie">
 		<div>
-			<iframe loading="lazy"
+			<iframe 
 				src={uspVideo}
 				frameborder="0"
 				allow="autoplay; fullscreen; picture-in-picture"
