@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto Sans');
+@import url('https://fonts.cdnfonts.com/css/noto-sans?styles=19843,19840');
 @import url("https://fonts.cdnfonts.com/css/press-start-2p");
 
 * {
@@ -15,14 +15,21 @@ body{
 
 }
 
-p{
+h1{
 	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+
+}
+
+ p{
+	font-family: 'Noto Sans', sans-serif;
+	letter-spacing: .05em;
 }
 
 header{
 	font-family: 'Noto Sans', sans-serif;
 }
-h1, h2 ,h3{
+ h2 ,h3{
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }

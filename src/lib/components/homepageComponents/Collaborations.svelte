@@ -1,49 +1,118 @@
-<section>
-	<h2>Collaboration</h2>
-	<div>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
+<script>
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+	import { onDestroy } from 'svelte';
+
+	gsap.registerPlugin(ScrollTrigger);
+
+
+	onMount(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const timeline = gsap.timeline();
+
+  timeline.to('.poop', {
+    xPercent: -150,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.poop',
+      pin: '.pap',
+      start: '45% 45%',
+      end: '+=2000',
+      scrub: 1,
+    },
+  });
+
+  timeline.to('.peep', {
+    xPercent: 150,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: '.peep',
+      start: '3% 3%',
+      end: '+=2000',
+      scrub: 1,
+    },
+  });
+
+  timeline.play();
+
+  // Refresh ScrollTrigger on window resize
+  const refreshScrollTrigger = () => {
+    ScrollTrigger.refresh();
+  };
+
+  window.addEventListener('resize', refreshScrollTrigger);
+});
+	
+	onDestroy(() => {
+		ScrollTrigger.killAll();
+	})
+</script>
+
+<section class="pap">
+	<h2>Collaborations</h2>
+	<div class="poop">
+		<img  loading="lazy" src="/assets/Alpha.png" alt="">
+		<img loading="lazy" src="/assets/dominos.png" alt="">
+		<img  loading="lazy" src="/assets/dtc.png" alt="">
+		<img loading="lazy" src="/assets/Elisestore.png" alt="">
+		<img loading="lazy" src="/assets/fifa.png" alt="">
+		<img  loading="lazy"src="/assets/goal.png" alt="">
+		<img loading="lazy" src="/assets/kampioenen.png" alt="">
+	
+
 	</div>
-	<div>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
-		<p>Nike</p>
+	<div class="peep">
+		<img  loading="lazy" src="/assets/niblr.png" alt="">
+		<img  loading="lazy" src="/assets/nike.png" alt="">
+		<img  loading="lazy" src="/assets/olympus.png" alt="">
+		<img  loading="lazy" src="/assets/papa-johns.png" alt="">
+		<img  loading="lazy" src="/assets/skincarew.png" alt="">
+		<img  loading="lazy" src="/assets/studio-a12.png" alt="">
+		<img  loading="lazy" src="/assets/taco.png" alt="">
+
 	</div>
 </section>
 
 <style>
+
 	h2 {
-		font-size: 1.2em;
 		position: absolute;
+		font-size: 1.5em;
+	
 	}
 
-	section {
+	.pap {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 10em;
-		margin-bottom: 8em;
-		overflow-y: scroll;
+		gap: 8em;
+min-height: 100vh;
+z-index: -5;
+
+		overflow-x: hidden;
+
 	}
+
 
 	section > div {
 		display: flex;
 		flex-direction: row;
-		gap: 1.5em;
-		overflow-y: scroll;
+		gap: 6em;
+		position: relative;
 	}
+	.poop{
+	transform: translateX(50%);
+	}
+	.peep{
+		transform: translateX(-50%);
+	}
+
+
+
+
 
 	/* p::after {
 		content: "-";
@@ -54,27 +123,38 @@
 	} */
 	p {
 		font-size: 2em;
+padding: .4em;
+text-transform: uppercase;
+font-weight: 600;
+
 	}
+
 
 	@media (min-width: 40rem) {
 		h2 {
-			font-size: 1.5em;
+			font-size: 2em;
 		}
 		p {
 			font-size: 2em;
+		}
+		img{
+			width: 15em;
 		}
 	}
 
 	@media (min-width: 75rem) {
 		h2 {
-			font-size: 2.5em;
+			font-size: 4em;
 		}
 		p {
-			font-size: 3.5em;
+			font-size: 7.5em;
 		}
 
 		section {
-			margin-bottom: 15em;
+			margin-bottom: 5em;
+		}
+		img{
+			width: 20em;
 		}
 	}
 </style>

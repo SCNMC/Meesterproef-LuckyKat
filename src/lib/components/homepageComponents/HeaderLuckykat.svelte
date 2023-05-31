@@ -9,17 +9,20 @@
 	onMount(() => {
 		const showAnim = gsap.from('header', { 
   yPercent: -100,
+
   paused: true,
   duration: 0.3
 }).progress(1);
 
 ScrollTrigger.create({
-  start: "top top",
+	
+  start: "top",
   end: 99999,
   onUpdate: (self) => {
     self.direction === -1 ? showAnim.play() : showAnim.reverse()
   }
 });
+
 });
 
 </script>
@@ -36,8 +39,11 @@ ScrollTrigger.create({
 		justify-content: space-between;
 		align-items: center;
 		position: sticky;
+
 		top: 0;
-        background-color: black;
+        background-color: white;
+		border-bottom: 1px solid #E5E5E5;
 		padding: .5em .5em;
+		z-index: 999;
     }
 </style>

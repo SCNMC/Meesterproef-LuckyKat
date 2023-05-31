@@ -33,7 +33,7 @@
 		display: flex;
 		display: none;
 		list-style: none;
-		padding:1.7em;
+		padding:1.5em 5em;
 		gap: 2em;
 		color: rebeccapurple;
 
