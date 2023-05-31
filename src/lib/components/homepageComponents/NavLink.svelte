@@ -10,7 +10,7 @@
 <style>
     li{
         margin-bottom: .5em;
-        color: white;
+        color: black;
         font-size: 1.2em;
        
     }

@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 10em;
+
     }
  
  @media(min-width:50rem){

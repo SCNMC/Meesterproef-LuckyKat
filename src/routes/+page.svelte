@@ -44,8 +44,7 @@ gsap.utils.toArray(".wrapper").forEach(function(container) {
 <Hero 
 heroTitle="Luckykat"
 heroLogo="/assets/logogeel.png"
-heroDescription="Ignite Your Online Presence: Unleashing Social Media's Power!"
-heroButton="Scroll down"
+heroButton="Scroll down..."
 buttonImage ="/assets/scrolldown.png"
 />
 <!-- {#each data.document as data} -->

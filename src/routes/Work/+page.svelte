@@ -19,12 +19,12 @@
 	/>
 	<Work
 		workColor="#FFDB58"
-		workVideo={document[0].data.video.embed_url}
+		workVideo={document[1].data.video.embed_url}
 		workTitles={document[0].data.title}
 	/>
 	<Work
 		workColor="#008080"
-        workVideo={document[0].data.video.embed_url}
+        workVideo={document[1].data.video.embed_url}
 		workTitles={document[0].data.title}
 	/>
 	<Work
@@ -39,12 +39,12 @@
 	/>
 	<Work
 		workColor="#FFA14E"
-        workVideo={document[0].data.video.embed_url}
+        workVideo={document[1].data.video.embed_url}
 		workTitles={document[0].data.title}
 	/>
 	<Work
 		workColor="#8E4585"
-		workVideo={document[0].data.video.embed_url}
+		workVideo={document[1].data.video.embed_url}
 		workTitles={document[0].data.title}
 	/>
 	<Work
