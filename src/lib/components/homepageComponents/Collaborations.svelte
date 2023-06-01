@@ -6,32 +6,31 @@
 
 	gsap.registerPlugin(ScrollTrigger);
 
-
 	onMount(() => {
   gsap.registerPlugin(ScrollTrigger);
 
   const timeline = gsap.timeline();
 
   timeline.to('.poop', {
-    xPercent: -150,
+    x: '-100%',
     ease: 'none',
     scrollTrigger: {
       trigger: '.poop',
       pin: '.pap',
-      start: '30% 30%',
-      end: '+=3000',
-      scrub: true,
+      start: '40% 40%',
+      end: '+=1000',
+      scrub: 1,
     },
   });
 
   timeline.to('.peep', {
-    xPercent: 150,
+    x: '150%',
     ease: 'none',
     scrollTrigger: {
       trigger: '.peep',
-      start: '3% 3%',
-      end: '+=3000',
-      scrub: true,
+      start: '40% 40%',
+      end: '+=1000',
+      scrub: 1,
     },
   });
 
@@ -85,7 +84,7 @@ window.addEventListener('resize', refreshScrollTrigger);
 <style>
 
 	h2 {
-		position: absolute;
+
 		font-size: 1.5em;
 	
 	}
@@ -95,7 +94,7 @@ window.addEventListener('resize', refreshScrollTrigger);
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 8em;
+		gap: 4em;
 min-height: 100vh;
 z-index: -5;
 
@@ -111,10 +110,12 @@ z-index: -5;
 		position: relative;
 	}
 	.poop{
+position: relative;
 	transform: translateX(50%);
 	will-change: transform, opacity;
 	}
 	.peep{
+position: relative;
 		transform: translateX(-50%);
 		will-change: transform, opacity;
 	}
