@@ -12,14 +12,14 @@
   const timeline = gsap.timeline();
 
   timeline.to('.poop', {
-    x: '-100%',
+    x: '-150%',
     ease: 'none',
     scrollTrigger: {
       trigger: '.poop',
       pin: '.pap',
       start: '40% 40%',
-      end: '+=1000',
-      scrub: 1,
+      end: '+=2000',
+      scrub: .2,
     },
   });
 
@@ -28,9 +28,9 @@
     ease: 'none',
     scrollTrigger: {
       trigger: '.peep',
-      start: '40% 40%',
-      end: '+=1000',
-      scrub: 1,
+      start: '50% 50%',
+      end: '+=2000',
+      scrub: .2,
     },
   });
 
@@ -112,11 +112,13 @@ z-index: -5;
 	.poop{
 position: relative;
 	transform: translateX(50%);
+	transform: translateZ(0);
 	will-change: transform, opacity;
 	}
 	.peep{
 position: relative;
 		transform: translateX(-50%);
+		transform: translateZ(0);
 		will-change: transform, opacity;
 	}
 
