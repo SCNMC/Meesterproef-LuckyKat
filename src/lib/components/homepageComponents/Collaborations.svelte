@@ -38,11 +38,18 @@
   timeline.play();
 
   // Refresh ScrollTrigger on window resize
-  const refreshScrollTrigger = () => {
-    ScrollTrigger.refresh();
-  };
+  let resizeTimeout;
 
-  window.addEventListener('resize', refreshScrollTrigger);
+const refreshScrollTrigger = () => {
+  if (!resizeTimeout) {
+    resizeTimeout = setTimeout(() => {
+      resizeTimeout = null;
+      ScrollTrigger.refresh();
+    }, 200); // Adjust the timeout duration as needed
+  }
+};
+
+window.addEventListener('resize', refreshScrollTrigger);
 });
 	
 	onDestroy(() => {
