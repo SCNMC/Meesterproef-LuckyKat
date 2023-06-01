@@ -16,11 +16,10 @@
     ease: 'none',
     scrollTrigger: {
       trigger: '.poop',
-	  markers: true,
       pin: '.pap',
-      start: 'bottom 60%',
-      end: '+=1000',
-      scrub: .025,
+      start: '40% 40%',
+      end: '+=4000',
+      scrub: 0.25,
     },
   });
 
@@ -29,10 +28,9 @@
     ease: 'none',
     scrollTrigger: {
       trigger: '.peep',
-      start: 'top 60%',
-	  markers: true,
-      end: '+=1000',
-      scrub: .025,
+      start: '60% 60%',
+      end: '+=4000',
+      scrub: 0.25,
     },
   });
 
@@ -96,9 +94,10 @@ window.addEventListener('resize', refreshScrollTrigger);
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 2em;
+		gap: 4em;
+min-height: 100vh;
 z-index: -5;
-position: relative;
+
 		overflow-x: hidden;
 
 	}
@@ -111,13 +110,13 @@ position: relative;
 		position: relative;
 	}
 	.poop{
-
-
+position: relative;
+	transform: translateX(50%);
 	will-change: transform, opacity;
 	}
 	.peep{
-
-
+position: relative;
+		transform: translateX(-50%);
 
 		will-change: transform, opacity;
 	}
