@@ -112,13 +112,12 @@ z-index: -5;
 	.poop{
 position: relative;
 	transform: translateX(50%);
-	transform: translateZ(0);
 	will-change: transform, opacity;
 	}
 	.peep{
 position: relative;
 		transform: translateX(-50%);
-		transform: translateZ(0);
+
 		will-change: transform, opacity;
 	}
 
