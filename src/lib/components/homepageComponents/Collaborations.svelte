@@ -18,8 +18,8 @@
       trigger: '.poop',
       pin: '.pap',
       start: '40% 40%',
-      end: '+=4000',
-      scrub: 2,
+      end: '+=2000',
+      scrub: 1,
     },
   });
 
@@ -29,8 +29,8 @@
     scrollTrigger: {
       trigger: '.peep',
       start: '60% 60%',
-      end: '+=4000',
-      scrub: 2,
+      end: '+=2000',
+      scrub: 1,
     },
   });
 
@@ -94,7 +94,7 @@ window.addEventListener('resize', refreshScrollTrigger);
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 1em;
+		gap: 2em;
 min-height: 100vh;
 z-index: -5;
 
@@ -111,11 +111,12 @@ z-index: -5;
 	}
 	.poop{
 position: relative;
+	transform: translateX(50%);
 	will-change: transform, opacity;
 	}
 	.peep{
 position: relative;
-
+		transform: translateX(-50%);
 
 		will-change: transform, opacity;
 	}

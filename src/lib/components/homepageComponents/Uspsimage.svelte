@@ -107,7 +107,7 @@ z-index: -4;
 		position: absolute;
 		background-color: white;
 		border-bottom-right-radius: 1em;
-		padding: 1em 1.5em;
+		padding: 1em 2em;
 		margin-top: -1em;
 		height: 1em;
 		z-index: 3;

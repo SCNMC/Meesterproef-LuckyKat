@@ -65,12 +65,13 @@ padding-bottom: 43%;
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
+
 	}
 
 	h2 {
 		position: absolute;
 		background-color: white;
-		padding: 1em 1.5em;
+		padding: 1em 2em;
 		border-bottom-right-radius: 1em;
 		z-index: -1;
 		margin-top: -1em;
@@ -94,7 +95,7 @@ padding-bottom: 43%;
 	p {
 		background: var(--color);
 		color: white;
-		padding:1.5em;
+		padding: 1em 2em;
 	}
 	button {
 		display: flex;

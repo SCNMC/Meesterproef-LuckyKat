@@ -9,9 +9,10 @@
 
 <style>
     li{
-        margin-bottom: .5em;
+
         color: black;
-        font-size: 1.2em;
+        font-size: 1.1em;
        
     }
+
 </style>

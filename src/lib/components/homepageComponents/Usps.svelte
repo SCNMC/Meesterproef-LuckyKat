@@ -56,7 +56,7 @@
 		position: absolute;
 		z-index: 1;
 		background-color: white;
-		padding: 1em 1.5em;
+		padding: 1em 2em;
 		margin-top: -1em;
 		height: 1em;
 

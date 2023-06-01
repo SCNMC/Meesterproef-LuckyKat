@@ -21,7 +21,7 @@
 		</h1>
 		<img src={heroLogo} alt="logo geel" />
 	</div>
-	<p>We take it to the next level, real and original content <br>Unleashing Social Media's Power!</p>
+	<p>We take it to the next level, and further <br>real and original content</p>
 	<button>{heroButton}</button>
 	<a href=""><img src={buttonImage} alt="" /></a>
 </section>
@@ -39,23 +39,27 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
 		justify-content: center;
-		gap: 2em;
+		gap: 1.5em;
 		padding: 1em 2em;
-		height: 100vh;
+		min-height: 90vh;
 	}
 
 	h1 {
-		font-size: 2em;
-		font-weight: 700;
+		font-size: 3em;
+
 	}
 	section p {
 		text-align: center;
+		font-size: .95em;
+		font-weight: 300;
 	}
 	div {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		gap: 1em;
 	}
 	div img {
 		width: 3em;
@@ -102,7 +106,7 @@
 
 	@media (min-width: 60rem) {
 		section {
-			gap: 3.5em;
+			gap: 3em;
 			
 		}
 		h1 {
@@ -114,8 +118,9 @@
 		div img {
 			width: 8em;
 		}
-		p{
-			font-size: 2em;
+		section > p{
+			font-size: 1.7em;
+	
 		}
 		
 	}

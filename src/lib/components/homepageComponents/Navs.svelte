@@ -9,9 +9,9 @@
 </script>
 <div>
     <ul>
-		<NavLink  link='/Work' text='Work'  />
-		<NavLink link='/' text='About us'  />
-		<NavLink link='/Contact' text='Contact'  />
+		<NavLink  link='/Work' text='WORK'  />
+		<NavLink link='/' text='ABOUT'  />
+		<a href="/Contact"> CONTACT</a>
 		
 		<!-- <li>Beoogde leerresultaten</li>
 		<li>Onderwijsleeromgeving</li>
@@ -29,14 +29,24 @@
 	{/if}
 
 <style>
-	div > ul{
+	 ul{
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		display: none;
 		list-style: none;
 		padding:1.5em 5em;
 		gap: 2em;
 		color: rebeccapurple;
 
+	}
+	ul :nth-child(3){
+		text-align: center;
+		background-color: black;
+		color: white;
+		padding: .5em;
+		border-radius: 2em;
+		width: 6em;
 	}
 
 	nav {
