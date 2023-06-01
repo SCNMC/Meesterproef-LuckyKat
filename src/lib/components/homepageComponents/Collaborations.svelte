@@ -19,7 +19,7 @@
       pin: '.pap',
       start: '40% 40%',
       end: '+=4000',
-      scrub: 0.25,
+      scrub: 2,
     },
   });
 
@@ -30,7 +30,7 @@
       trigger: '.peep',
       start: '60% 60%',
       end: '+=4000',
-      scrub: 0.25,
+      scrub: 2,
     },
   });
 
@@ -44,7 +44,7 @@ const refreshScrollTrigger = () => {
     resizeTimeout = setTimeout(() => {
       resizeTimeout = null;
       ScrollTrigger.refresh();
-    }, 200); // Adjust the timeout duration as needed
+    }, 600); // Adjust the timeout duration as needed
   }
 };
 
@@ -94,7 +94,7 @@ window.addEventListener('resize', refreshScrollTrigger);
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 4em;
+		gap: 1em;
 min-height: 100vh;
 z-index: -5;
 
@@ -111,12 +111,11 @@ z-index: -5;
 	}
 	.poop{
 position: relative;
-	transform: translateX(50%);
 	will-change: transform, opacity;
 	}
 	.peep{
 position: relative;
-		transform: translateX(-50%);
+
 
 		will-change: transform, opacity;
 	}
