@@ -18,8 +18,8 @@
       trigger: '.poop',
       pin: '.pap',
       start: '40% 40%',
-      end: '+=2000',
-      scrub: 1,
+      end: '+=4000',
+      scrub: true,
     },
   });
 
@@ -28,9 +28,9 @@
     ease: 'none',
     scrollTrigger: {
       trigger: '.peep',
-      start: '50% 50%',
-      end: '+=2000',
-      scrub: 1,
+      start: '60% 60%',
+      end: '+=4000',
+      scrub: true,
     },
   });
 
