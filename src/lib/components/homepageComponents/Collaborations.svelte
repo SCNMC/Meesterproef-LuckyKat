@@ -19,7 +19,7 @@
       pin: '.pap',
       start: '40% 40%',
       end: '+=2000',
-      scrub: .2,
+      scrub: 1,
     },
   });
 
@@ -30,7 +30,7 @@
       trigger: '.peep',
       start: '50% 50%',
       end: '+=2000',
-      scrub: .2,
+      scrub: 1,
     },
   });
 
