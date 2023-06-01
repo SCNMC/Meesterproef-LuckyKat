@@ -66,7 +66,7 @@
 
 	@media (min-width: 60rem) {
         p{
-            font-size: 2em;
+            font-size: 1.5em;
         }
         div{
             display: grid;

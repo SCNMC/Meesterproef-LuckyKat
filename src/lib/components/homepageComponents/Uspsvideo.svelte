@@ -8,42 +8,13 @@
 	export let width = `${4}rem`;
 	export let buttonColor = `red`;
 	export let uspVideo;
-
-	import { onMount } from "svelte";
-	import { gsap } from "gsap/dist/gsap";
-	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-	
-	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);  
-
-gsap.utils.toArray(".divie").forEach(function(container) {
-    let videos = container.querySelector("iframe");
-  
-    let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          scrub: true,
-          pin: false,
-        },
-      }); 
-      tl.from(videos, {
-        yPercent: -15,
-        ease: "none",
-      }).to(videos, {
-        yPercent: 8,
-        ease: "none",
-      }); 
-  });
-	});
-
-	
 </script>
 
 <section>
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<div class="divie">
 		<div>
-			<iframe loading="lazy"
+			<iframe 
 				src={uspVideo}
 				frameborder="0"
 				allow="autoplay; fullscreen; picture-in-picture"
@@ -94,9 +65,6 @@ padding-bottom: 43%;
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
-		margin-top: -2em;
-
-	
 	}
 
 	h2 {

@@ -42,12 +42,13 @@
 	}
 	button[aria-expanded="true"] svg {
 		stroke: yellow;
+		z-index: 9999;
 	}
 	svg {
 		transition: transform var(--transition-duration);
 		position: relative;
 		z-index: 9999999;
-		color: white;
+		color: black;
 
 	}
 	.top {
