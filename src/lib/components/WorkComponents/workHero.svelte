@@ -1,5 +1,5 @@
 <section>
-    <h1>Our work </h1>
+    <h1>OUR WORK </h1>
     <p>Explore our captivating Instagram feed, where stunning visuals and inspiring stories come together. Discover breathtaking destinations, mouthwatering culinary creations, and behind-the-scenes glimpses into our daily adventures.
  Join us on this exciting journey as we showcase our vibrant social media content. Get ready to be inspired!</p>
 </section>

@@ -9,9 +9,9 @@
 </script>
 <div>
     <ul>
-		<NavLink  link='/Work' text='WORK'  />
-		<NavLink link='/' text='ABOUT'  />
-		<a href="/Contact"> CONTACT</a>
+		<NavLink  link='/work' text='WORK'  />
+		<NavLink link='/about' text='ABOUT'  />
+		<a href="/contact"> CONTACT</a>
 		
 		<!-- <li>Beoogde leerresultaten</li>
 		<li>Onderwijsleeromgeving</li>
@@ -22,9 +22,9 @@
 	<Animatedhamburgers {open} {onClick} />
     {#if open}
 		<nav transition:fly={{ y: -200, duration: 400 }}>
-			<a transition:fly={{y:-1000, duration:1100}} href="/Work">Work</a>
-			<a transition:fly={{y:-800, duration:1100}} href="./About us">About us</a>
-			<a transition:fly={{y:- 600, duration:1100}}  href="./Contact">Contact</a>
+			<a transition:fly={{y:-1000, duration:1100}} href="/work">Work</a>
+			<a transition:fly={{y:-800, duration:1100}} href="./about">About us</a>
+			<a transition:fly={{y:- 600, duration:1100}}  href="./contact">Contact</a>
 		</nav>
 	{/if}
 

@@ -3,7 +3,7 @@ import Contact from "./Contact.svelte";
 </script>
 
 <section>
-	<h1>Contact</h1>
+	<h1>CONTACT</h1>
 <p>Ready to make your idea come to life? <br>
     Contact us and lets make that idea a reality.</p>
     <div>

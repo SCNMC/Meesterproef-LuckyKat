@@ -14,6 +14,7 @@
   section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 10em;
    
   }
  }

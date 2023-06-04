@@ -24,6 +24,8 @@ h1{
  p{
 	font-family: 'Noto Sans', sans-serif;
 	letter-spacing: .05em;
+	line-height: 1.6em;
+	font-weight: 300;
 }
 
 header{

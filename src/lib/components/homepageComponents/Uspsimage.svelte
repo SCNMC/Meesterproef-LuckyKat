@@ -186,7 +186,7 @@ z-index: -4;
 		p {
 			text-align: center;
 			font-size: 1.4em;
-			padding: 2.5em;
+			padding: 1.8em;
 		}
 		section > img {
 			height: 65vh;
