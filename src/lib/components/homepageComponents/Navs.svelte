@@ -11,7 +11,7 @@
     <ul>
 		<NavLink  link='/works' text='WORK'  />
 		<NavLink link='/about' text='ABOUT'  />
-		<a href="/contact"> CONTACT</a>
+		<a href="/contacts"> CONTACT</a>
 		
 		<!-- <li>Beoogde leerresultaten</li>
 		<li>Onderwijsleeromgeving</li>
