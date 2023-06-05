@@ -34,7 +34,7 @@
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 15em;
+		margin-bottom: 10em;
 		z-index: -2;
 	}
 	section > img {

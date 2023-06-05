@@ -54,7 +54,7 @@ padding-bottom: 43%;
 
 		/* height: 100vh; */
 		width: 100%;
-		margin-bottom: 15em;
+		margin-bottom: 10em;
 	}
 	img {
 		width: 100%;
