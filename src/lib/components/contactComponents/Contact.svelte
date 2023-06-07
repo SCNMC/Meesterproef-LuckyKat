@@ -7,25 +7,27 @@
 >
 	<fieldset id="fs-frm-inputs">
 		<label for="full-name">Full Name</label>
-		<input class="name"
+		<input
+			class="name"
 			type="text"
 			name="name"
 			id="full-name"
-			placeholder="First and Last" 
+			placeholder="First and Last"
 			required=""
 			data-nlok-ref-guid="51e6df78-9893-41f5-8383-746062818f53"
-		/><div>
-			</div>
+		/><div />
 		<label for="email-address">Email Address</label>
-		<input class="email"
+		<input
+			class="email"
 			type="email"
 			name="_replyto"
 			id="email-address"
 			placeholder="Email@domain.tld"
 			required=""
 		/>
-        <label for="email-address">Message</label>
-		<input class="message"
+		<label for="email-address">Message</label>
+		<input
+			class="message"
 			type="email"
 			name="_replyto"
 			id="email-address"
@@ -33,14 +35,13 @@
 			required=""
 		/>
 	</fieldset>
-    <div>
-	<button type="submit">Submit</button>
-</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
 </form>
 
 <style>
 	form {
-
 		flex-direction: column;
 		justify-content: start;
 
@@ -51,14 +52,12 @@
 	input,
 	button,
 	textarea,
-    fieldset {
+	fieldset {
 		border-radius: 0;
 		outline: none;
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		appearance: none;
-        
-
 	}
 
 	fieldset {
@@ -68,33 +67,33 @@
 		border: none;
 		gap: 2em;
 	}
-    
 
 	input {
-		border-color: white;		border-style: unset;
-        border-bottom: 3px solid black;
-        height: 2em;
+		border-color: white;
+		border-style: unset;
+		border-bottom: 3px solid black;
+		height: 2em;
 	}
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-	button{
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	button {
 		color: white;
 		background-color: black;
 		padding: 2em;
 		margin-top: 2em;
 	}
 
-.name::placeholder{
-    color: #4169E1;
-}
+	.name::placeholder {
+		color: #4169e1;
+	}
 
-.email::placeholder{
-	color: #8E4585;
-}
-.message::placeholder{
-	color: #008080;
-}
+	.email::placeholder {
+		color: #8e4585;
+	}
+	.message::placeholder {
+		color: #008080;
+	}
 </style>

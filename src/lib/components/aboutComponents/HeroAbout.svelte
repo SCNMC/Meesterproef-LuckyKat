@@ -21,9 +21,6 @@
 		h1 {
 			font-size: 3em;
 		}
-		p {
-			font-size: 1.5em;
-		}
 	}
 
 	@media (min-width: 60rem) {
@@ -32,10 +29,6 @@
 		}
 		h1 {
 			font-size: 4em;
-		}
-		p {
-			font-size: 1.5em;
-			width: 70rem;
 		}
 	}
 

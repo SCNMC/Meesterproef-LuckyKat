@@ -7,7 +7,7 @@
   import Uspsimage from "$lib/components/homepageComponents/Uspsimage.svelte";
   import Footer from "$lib/components/homepageComponents/Footer.svelte";
   import CalltoAction from "$lib/components/homepageComponents/CalltoAction.svelte";
-	import * as prismicH from "@prismicio/helpers";
+
 	export let data;
 	const { document } = data;
 
@@ -42,8 +42,8 @@ gsap.utils.toArray(".wrapper").forEach(function(container) {
 
 <HeaderLuckykat />
 <Hero 
-heroTitle="Luckykat"
-heroLogo="/assets/logogeel.png"
+heroTitle="LUCKY KAT"
+heroLogo="/assets/logo.svg"
 heroButton="Scroll down..."
 buttonImage ="/assets/scrolldown.png"
 />

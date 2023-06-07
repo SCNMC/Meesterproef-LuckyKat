@@ -9,20 +9,16 @@
 </script>
 <div>
     <ul>
-		<NavLink  link='/works' text='WORK'  />
+		<NavLink  link='/work' text='WORK'  />
 		<NavLink link='/about' text='ABOUT'  />
 		<a href="/contacts"> CONTACT</a>
-		
-		<!-- <li>Beoogde leerresultaten</li>
-		<li>Onderwijsleeromgeving</li>
-		<li>Toetsing</li>
-		<li>Gerealiseerde Leerresultaten</li> -->
+
 	</ul>
 	</div>
 	<Animatedhamburgers {open} {onClick} />
     {#if open}
 		<nav transition:fly={{ y: -200, duration: 400 }}>
-			<a transition:fly={{y:-1000, duration:1100}} href="./works">Work</a>
+			<a transition:fly={{y:-1000, duration:1100}} href="./work">Work</a>
 			<a transition:fly={{y:-800, duration:1100}} href="./about">About us</a>
 			<a transition:fly={{y:- 600, duration:1100}}  href="./contacts">Contact</a>
 		</nav>
@@ -35,7 +31,7 @@
 		align-items: center;
 		display: none;
 		list-style: none;
-		padding:1.5em 5em;
+		padding:1.5em 3em;
 		gap: 2em;
 		color: rebeccapurple;
 
@@ -85,7 +81,7 @@
             display: inline;
 			display: flex;
 			flex-direction: row;
-			gap: 4em;
+			gap: 3em;
         }
 }
 </style>

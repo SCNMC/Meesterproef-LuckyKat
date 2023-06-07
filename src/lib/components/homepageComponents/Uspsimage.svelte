@@ -171,7 +171,7 @@ z-index: -4;
 		}
 	}
 
-	@media (min-width: 60rem) {
+	@media (min-width: 75rem) {
 		h2 {
 			font-size: 2.9em;
 		}

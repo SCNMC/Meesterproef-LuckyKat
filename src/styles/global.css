@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/noto-sans?styles=19843,19840');
+@import url("https://fonts.cdnfonts.com/css/rubik?styles=19495,19491,19493,19488,19486");
 @import url("https://fonts.cdnfonts.com/css/press-start-2p");
 
 * {
@@ -11,51 +11,45 @@ a {
 	color: inherit;
 }
 
-body{
-
+h1 {
+	font-family: "Rubik", sans-serif;
 }
 
-h1{
-	font-family: 'Noto Sans', sans-serif;
-	font-weight: 800;
-
-}
-
- p{
-	font-family: 'Noto Sans', sans-serif;
-	letter-spacing: .05em;
+p {
+	font-family: "Rubik", sans-serif;
+	letter-spacing: 0.05em;
 	line-height: 1.6em;
-	font-weight: 300;
 }
 
-header{
-	font-family: 'Noto Sans', sans-serif;
+header {
+	font-family: "Rubik", sans-serif;
 }
- h2 ,h3{
+h2,
+h3 {
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }
-button{
-	background:none;
+button {
+	background: none;
 	border: none;
 	font-family: "Press Start 2P", sans-serif;
 }
-a > p{
+a > p {
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }
-button > a{
+button > a {
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 1em;
 }
-li{
+li {
 	list-style: none;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: "Rubik", sans-serif;
 }
-label{
-	font-family: 'Noto Sans', sans-serif;
+label {
+	font-family: "Rubik", sans-serif;
 }
 
-input::placeholder{
+input::placeholder {
 	font-family: "Press Start 2P", sans-serif;
 }

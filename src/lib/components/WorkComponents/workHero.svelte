@@ -10,6 +10,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 1em 2em;
 
 
         height: 48vh;
@@ -19,8 +20,7 @@
         font-size: 2em;
     }
     p{
-        font-size: 1em;
-    width: 23rem;
+
     text-align: left;
     }
 
@@ -31,7 +31,8 @@
             font-size: 3em;
         }
         p{
-            font-size: 1.5em;
+            font-size: 1em;
+            text-align: left;
         }
     }
 

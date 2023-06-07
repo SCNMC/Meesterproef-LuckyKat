@@ -12,7 +12,6 @@
 	<div class="divs">
 		<iframe src={workVideo} frameborder="" />
 	</div>
-	<!-- <img loading="lazy" src={prismicH.asImageSrc(workImages)} alt="#" /> -->
 </section>
 
 <style>

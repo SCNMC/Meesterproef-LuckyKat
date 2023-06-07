@@ -2,128 +2,90 @@
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-	import { onDestroy } from 'svelte';
+	import { onDestroy } from "svelte";
 
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
-  gsap.registerPlugin(ScrollTrigger);
+		const collabAnimation = gsap.fromTo(
+			".collabs_item",
+			{ x: 0 },
+			{
+				x: "-20%",
+				duration: 25,
+				ease: "linear",
+				repeat: -1, // Repeat indefinitely
+				repeatDelay: 0, // No delay before repeating
+			}
+		);
 
-  const timeline = gsap.timeline();
-
-  timeline.to('.poop', {
-    x: '-150%',
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.poop',
-      pin: '.pap',
-      start: '40% 40%',
-      end: '+=2000',
-      scrub: 1,
-    },
-  });
-
-  timeline.to('.peep', {
-    x: '150%',
-    ease: 'none',
-    scrollTrigger: {
-      trigger: '.peep',
-      start: '60% 60%',
-      end: '+=2000',
-      scrub: 1,
-    },
-  });
-
-  timeline.play();
-
-  // Refresh ScrollTrigger on window resize
-  let resizeTimeout;
-
-const refreshScrollTrigger = () => {
-  if (!resizeTimeout) {
-    resizeTimeout = setTimeout(() => {
-      resizeTimeout = null;
-      ScrollTrigger.refresh();
-    }, 600); // Adjust the timeout duration as needed
-  }
-};
-
-window.addEventListener('resize', refreshScrollTrigger);
-});
-	
-	onDestroy(() => {
-		ScrollTrigger.killAll();
-	})
+		// Animation for .peep moving to the right
+		const collab2Animation = gsap.fromTo(
+			".collabs_items",
+			{ x: 0 },
+			{
+				x: "20%",
+				duration: 25,
+				ease: "linear",
+				repeat: -1, // Repeat indefinitely
+				repeatDelay: 0, // No delay before repeating
+			}
+		);
+	});
 </script>
 
-<section class="pap">
+<section class="collabs">
 	<h2>Collaborations</h2>
-	<div class="poop">
-		<img   src="/assets/Alpha.png" alt="">
-		<img  src="/assets/dominos.png" alt="">
-		<img  src="/assets/dtc.png" alt="">
-		<img  src="/assets/Elisestore.png" alt="">
-		<img  src="/assets/fifa.png" alt="">
-		<img  src="/assets/goal.png" alt="">
-		<img src="/assets/kampioenen.png" alt="">
-	
-
+	<div class="collabs_item">
+		<p>Alpha</p>
+		<p>ventilatie</p>
+		<p>-</p>
+		<p>FIFA</p>
+		<p>ONLINE</p>
+		<p>-</p>
+		<p>Nike</p>
+		<p>-</p>
+		<p>Taco</p>
+		<p>MUNDO</p>
+		<p>-</p>
+		<p>ELISE</p>
+		<p>STORE</p>
 	</div>
-	<div class="peep">
-		<img   src="/assets/niblr.png" alt="">
-		<img   src="/assets/nike.png" alt="">
-		<img  src="/assets/olympus.png" alt="">
-		<img   src="/assets/papa-johns.png" alt="">
-		<img  src="/assets/skincarew.png" alt="">
-		<img  src="/assets/studio-a12.png" alt="">
-		<img   src="/assets/taco.png" alt="">
-
+	<div class="collabs_items">
+		<p>OLYMPUS</p>
+		<p>-</p>
+		<p>PAPA</p>
+		<p>JOHNS</p>
+		<p>-</p>
+		<p>STUDIO</p>
+		<p>A12</p>
+		<p>-</p>
 	</div>
 </section>
 
 <style>
-
 	h2 {
-
 		font-size: 1.5em;
-	
 	}
 
-	.pap {
+	.collabs {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		gap: 2em;
-min-height: 100vh;
-z-index: -5;
+		gap: 5em;
+
+		z-index: -5;
+		margin-bottom: 10em;
 
 		overflow-x: hidden;
-
 	}
-
 
 	section > div {
 		display: flex;
 		flex-direction: row;
-		gap: 6em;
-		position: relative;
+		gap: 2em;
 	}
-	.poop{
-position: relative;
-	transform: translateX(50%);
-	will-change: transform, opacity;
-	}
-	.peep{
-position: relative;
-		transform: translateX(-50%);
-
-		will-change: transform, opacity;
-	}
-
-
-
-
 
 	/* p::after {
 		content: "-";
@@ -133,22 +95,23 @@ position: relative;
 		left: 9px;
 	} */
 	p {
+		color: white;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: black; /* Can be changed in the live sample */
 		font-size: 2em;
-padding: .4em;
-text-transform: uppercase;
-font-weight: 600;
-
+		text-transform: uppercase;
+		font-weight: 600;
 	}
-
 
 	@media (min-width: 40rem) {
 		h2 {
 			font-size: 2em;
 		}
 		p {
-			font-size: 2em;
+			font-size: 5em;
+			-webkit-text-stroke-width: 4px;
 		}
-		img{
+		img {
 			width: 15em;
 		}
 	}
@@ -164,7 +127,7 @@ font-weight: 600;
 		section {
 			margin-bottom: 5em;
 		}
-		img{
+		img {
 			width: 20em;
 		}
 	}

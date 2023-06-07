@@ -3,7 +3,7 @@
     export let text;
 </script>
 
-<li>
+<li class="menu">
     <a href="{link}">{text}</a>
 </li>
 

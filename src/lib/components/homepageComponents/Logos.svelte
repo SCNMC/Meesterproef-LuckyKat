@@ -14,7 +14,7 @@
 
     @media (min-width:50rem){
         img{
-            padding-left: 5em;
+            padding-left: 3em;
         }
       
     }
