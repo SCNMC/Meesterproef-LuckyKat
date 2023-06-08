@@ -9,11 +9,11 @@
 	import { gsap } from "gsap/dist/gsap";
 
 	onMount(() => {
-		gsap.from(".hero p, .hero button, .menu li, a", {
+	 	gsap.from(".hero p, .hero button, .menu li, a, .hamburger", {
 			y: "200",
 			opacity: 0,
 			ease: "Expo.easeInOut",
-			delay: 2.5,
+			delay: 2,
 			stagger: 0.08,
 			duration: 2.5,
 		});

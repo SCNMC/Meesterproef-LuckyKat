@@ -7,7 +7,7 @@
 	export let width =70;
 </script>
 
-<button on:click={onClick} aria-expanded={open} aria-label={ariaLabel}>
+<button class="hamburger" on:click={onClick} aria-expanded={open} aria-label={ariaLabel}>
 	<svg
 		class:open
 		viewBox="0 0 100 100"
