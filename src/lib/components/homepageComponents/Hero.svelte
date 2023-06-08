@@ -35,7 +35,7 @@
 		>We take it to the next level, and further <br />real and original content</p
 	>
 	<button>{heroButton}</button>
-	<a href=""><img src={buttonImage} alt="" /></a>
+	<img src={buttonImage} alt="" />
 </section>
 
 <style>
@@ -120,8 +120,8 @@
 
 	section p {
 		text-align: center;
-		font-size: 0.95em;
-		font-weight: 300;
+		font-size: 0.92em;
+		font-weight: 400;
 	}
 	div {
 		display: flex;
@@ -136,7 +136,7 @@
 		font-family: "Press Start 2P", sans-serif;
 	}
 
-	a > img {
+  img {
 		width: 3.5em;
 		animation-name: floating;
 		animation-duration: 3s;

@@ -2,7 +2,7 @@
 
  <div>
 	<ul>
-		<p>Lucykat</p>
+		<li>Lucykat</li>
 		<li> Kamelenspoor 80-5 </li>
 		<li>3605 ED Maarssen</li>
 		<li>The Netherlands</li>
@@ -11,14 +11,14 @@
 	</ul>
 
 	<ul>
-		<p>Navigations</p>
+		<li>Navigations</li>
 		<li>Work</li>
 		<li>About us</li>
 		<li> Contact</li>
 	</ul>
 
 	<ul>
-		<p>Socials</p>
+		<li>Socials</li>
 		<li><img src="/assets/Instagram.png" alt="instagram" /></li>
 		<li><img src="/assets/Facebook.png" alt="facebook" /></li>
 		<li><img src="/assets/Twitter.png" alt="twitter" /></li>
@@ -52,7 +52,7 @@
 		align-items: center;
 		gap: 0.5em;
 	}
-	p {
+	li:nth-child(1) {
 		font-family: "Press Start 2P", sans-serif;
 		margin-bottom: 0.5em;
 	}
@@ -60,12 +60,12 @@
 	footer > img {
 		width: 3em;
 	}
-	footer > p {
-		font-size: 0.5em;
+	li {
+		font-size: 1em;
 	}
 
 	@media (min-width: 60rem) {
-        p{
+        li:nth-child(1){
             font-size: 1.5em;
         }
         div{
@@ -85,7 +85,7 @@
         footer > img{
             width: 5em;
         }
-        footer > p{
+        li :nth-child(1){
             font-size: 0.8em;
         }
 

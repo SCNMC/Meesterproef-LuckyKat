@@ -11,7 +11,7 @@
     <ul>
 		<NavLink  link='/work' text='WORK'  />
 		<NavLink link='/about' text='ABOUT'  />
-		<a href="/contacts"> CONTACT</a>
+		<li><a href="/contacts"> CONTACT</a></li>
 
 	</ul>
 	</div>
@@ -43,6 +43,7 @@
 		padding: .5em;
 		border-radius: 2em;
 		width: 6em;
+		font-size: 1.2em;
 	}
 
 	nav {

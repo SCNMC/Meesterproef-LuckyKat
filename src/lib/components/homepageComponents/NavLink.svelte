@@ -11,7 +11,7 @@
     li{
 
         color: black;
-        font-size: 1.1em;
+        font-size: 1.3em;
        
     }
 

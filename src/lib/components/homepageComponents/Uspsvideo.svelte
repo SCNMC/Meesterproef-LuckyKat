@@ -16,6 +16,7 @@
 		<div>
 			<iframe 
 				src={uspVideo}
+				title="Iframe-video"
 				frameborder="0"
 				allow="autoplay; fullscreen; picture-in-picture"
 				allowfullscreen
