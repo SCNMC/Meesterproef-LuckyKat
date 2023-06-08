@@ -9,7 +9,7 @@
 	import { gsap } from "gsap/dist/gsap";
 
 	onMount(() => {
-	 	gsap.from(".hero p, .hero button, .menu li, .hero a,  .hamburger, header", {
+		gsap.from(".hero p, .hero button, .menu li, .hero a,  .hamburger, header", {
 			y: "200",
 			opacity: 0,
 			ease: "Expo.easeInOut",
@@ -136,7 +136,7 @@
 		font-family: "Press Start 2P", sans-serif;
 	}
 
-  img {
+	img {
 		width: 3.5em;
 		animation-name: floating;
 		animation-duration: 3s;
