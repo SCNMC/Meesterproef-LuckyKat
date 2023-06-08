@@ -5,7 +5,19 @@
 	export let heroButton;
 	export let buttonImage;
 
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
 
+	onMount(() => {
+		gsap.from(".hero p, .hero button, .menu li, a", {
+			y: "200",
+			opacity: -0,
+			ease: "Expo.easeInOut",
+			delay: 2.5,
+			stagger: 0.08,
+			duration: 2.5,
+		});
+	});
 </script>
 
 <section class="hero">
@@ -41,7 +53,7 @@
 		width: 3em;
 		animation: colorsvg 4s;
 	}
-	/* @keyframes colorsvg {
+	@keyframes colorsvg {
 		10% {
 			fill: #6a5acd;
 		}
@@ -69,14 +81,14 @@
 		0% {
 			fill: black;
 		}
-	} */
+	}
 
 	h1 {
 		color: black;
 		font-size: 2em;
 		animation: colorchange 4s;
 	}
-	/* @keyframes colorchange {
+	@keyframes colorchange {
 		10% {
 			color: #6a5acd;
 		}
@@ -104,7 +116,7 @@
 		0% {
 			color: black;
 		}
-	} */
+	}
 
 	section p {
 		text-align: center;
