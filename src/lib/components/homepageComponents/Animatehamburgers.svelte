@@ -47,7 +47,7 @@ p{
 	}
 	button[aria-expanded="true"] svg {
 		stroke: yellow;
-		z-index: 999999999;
+		z-index: 999999;
 	}
 	svg {
 		transition: transform var(--transition-duration);
