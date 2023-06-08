@@ -10,6 +10,7 @@
     img{
         width: 10em;
         padding-left:1.5em;
+  
     }
 
     @media (min-width:50rem){

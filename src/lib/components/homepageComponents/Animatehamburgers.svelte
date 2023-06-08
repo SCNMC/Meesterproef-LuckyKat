@@ -52,7 +52,6 @@ p{
 	svg {
 		transition: transform var(--transition-duration);
 		position: relative;
-		z-index: 99999999;
 		color: black;
 
 	}
