@@ -5,19 +5,7 @@
 	export let heroButton;
 	export let buttonImage;
 
-	import { onMount } from "svelte";
-	import { gsap } from "gsap/dist/gsap";
 
-	onMount(() => {
-		gsap.from(".hero p, .hero button, .menu li, a", {
-			y: "200",
-			opacity: 0,
-			ease: "Expo.easeInOut",
-			delay: 2,
-			stagger: 0.08,
-			duration: 2.5,
-		});
-	});
 </script>
 
 <section class="hero">
