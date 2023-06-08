@@ -11,7 +11,7 @@
 			".collabs_item",
 			{ x: 0 },
 			{
-				x: "-20%",
+				x: "-40%",
 				duration: 25,
 				ease: "linear",
 				repeat: -1, // Repeat indefinitely
@@ -24,7 +24,7 @@
 			".collabs_items",
 			{ x: 0 },
 			{
-				x: "20%",
+				x: "40%",
 				duration: 25,
 				ease: "linear",
 				repeat: -1, // Repeat indefinitely
@@ -52,6 +52,11 @@
 		<p>STORE</p>
 	</div>
 	<div class="collabs_items">
+		<p>Uboss</p>
+		<p>-</p>
+		<p>Kampioenen</p>
+		<p>zorg</p>
+		<p>-</p>
 		<p>OLYMPUS</p>
 		<p>-</p>
 		<p>PAPA</p>

@@ -10,10 +10,10 @@
 
 	onMount(() => {
 		gsap.from(".hero p, .hero button, .menu li, a", {
-			y: "190",
+			y: "200",
 			opacity: 0,
 			ease: "Expo.easeInOut",
-			delay: 2.5,
+			delay: 2,
 			stagger: 0.08,
 			duration: 2.5,
 		});
@@ -88,7 +88,7 @@
 		font-size: 2em;
 		animation: colorchange 4s;
 	}
-	@keyframes colorchange {
+	/* @keyframes colorchange {
 		10% {
 			color: #6a5acd;
 		}
@@ -116,7 +116,7 @@
 		0% {
 			color: black;
 		}
-	}
+	} */
 
 	section p {
 		text-align: center;
