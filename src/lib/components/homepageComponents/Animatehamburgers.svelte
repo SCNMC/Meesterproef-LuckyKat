@@ -47,12 +47,12 @@ p{
 	}
 	button[aria-expanded="true"] svg {
 		stroke: yellow;
-		z-index: 9999999;
+		z-index: 999999999;
 	}
 	svg {
 		transition: transform var(--transition-duration);
 		position: relative;
-		z-index: 9999999;
+		z-index: 99999999;
 		color: black;
 
 	}
