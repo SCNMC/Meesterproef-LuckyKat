@@ -11,7 +11,7 @@
 	onMount(() => {
 		gsap.from(".hero p, .hero button, .menu li, a", {
 			y: "200",
-			opacity: -0,
+			opacity: 0,
 			ease: "Expo.easeInOut",
 			delay: 2.5,
 			stagger: 0.08,
