@@ -41,7 +41,7 @@
 		width: 3em;
 		animation: colorsvg 4s;
 	}
-	@keyframes colorsvg {
+	/* @keyframes colorsvg {
 		10% {
 			fill: #6a5acd;
 		}
@@ -69,7 +69,7 @@
 		0% {
 			fill: black;
 		}
-	}
+	} */
 
 	h1 {
 		color: black;
