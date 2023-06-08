@@ -9,13 +9,13 @@
 	import { gsap } from "gsap/dist/gsap";
 
 	onMount(() => {
-	 	gsap.from(".hero p, .hero button, .menu li, a, .hamburger", {
+	 	gsap.from(".hero p, .hero button, .menu li, .hero a,  .hamburger, header", {
 			y: "200",
 			opacity: 0,
 			ease: "Expo.easeInOut",
 			delay: 2,
 			stagger: 0.08,
-			duration: 2.5,
+			duration: 2.7,
 		});
 	});
 </script>
