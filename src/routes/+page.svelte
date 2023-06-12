@@ -7,6 +7,7 @@
   import Uspsimage from "$lib/components/homepageComponents/Uspsimage.svelte";
   import Footer from "$lib/components/homepageComponents/Footer.svelte";
   import CalltoAction from "$lib/components/homepageComponents/CalltoAction.svelte";
+  import ColorBlocks from "$lib/components/aboutComponents/ColorBlocks.svelte";
 
 	export let data;
 	const { document } = data;
@@ -85,6 +86,7 @@ uspVideo={document[2].data.video.embed_url}
 	uspButton={document[0].data.infobutton}
 />
 <CalltoAction/>
+<ColorBlocks/>
 <Footer/>
 
 

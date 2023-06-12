@@ -7,7 +7,7 @@
 	export let width =70;
 </script>
 
-<button class="hamburger" on:click={onClick} aria-expanded={open} aria-label={ariaLabel}>
+<button on:click={onClick} aria-expanded={open} aria-label={ariaLabel}>
 	<svg
 		class:open
 		viewBox="0 0 100 100"
@@ -47,11 +47,12 @@ p{
 	}
 	button[aria-expanded="true"] svg {
 		stroke: yellow;
-		z-index: 999999;
+		z-index: 9999999;
 	}
 	svg {
 		transition: transform var(--transition-duration);
 		position: relative;
+		z-index: 9999999;
 		color: black;
 
 	}

@@ -5,6 +5,7 @@
 	import Work from "$lib/components/WorkComponents/Work.svelte";
     import WorkImage from "$lib/components/WorkComponents/workImage.svelte";
     import Footer from "$lib/components/homepageComponents/Footer.svelte";
+	import ColorBlocks from "$lib/components/aboutComponents/ColorBlocks.svelte";
 	export let data;
 	const { document } = data;
 </script>
@@ -53,4 +54,5 @@
 		workTitles={document[0].data.title}
 	/>
 </WorkSection>
+<ColorBlocks/>
 <Footer/>

@@ -35,7 +35,7 @@
 		>We take it to the next level, and further <br />real and original content</p
 	>
 	<button>{heroButton}</button>
-	<img src={buttonImage} alt="" />
+	<a><img src={buttonImage} alt="scrolldown" /></a>
 </section>
 
 <style>
