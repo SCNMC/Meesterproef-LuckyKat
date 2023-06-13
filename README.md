@@ -3,7 +3,7 @@
 
 
 
-Dit is een herdesign op de We love web Pub website.
+Dit is mijn websit voor Luckykat als onderdeel van de meesterproef.
 
 <img width="1679" alt="Schermafbeelding 2023-06-13 om 20 27 17" src="https://github.com/SCNMC/Meesterproef-LuckyKat/assets/90189750/9453e82f-cc7a-4c4b-8ba2-d4399401c41a">
 
