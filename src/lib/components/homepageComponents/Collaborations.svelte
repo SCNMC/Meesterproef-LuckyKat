@@ -14,12 +14,10 @@
 				x: "-40%",
 				duration: 25,
 				ease: "linear",
-				repeat: -1, // Repeat indefinitely
-				repeatDelay: 0, // No delay before repeating
+				repeat: -1, 
+				repeatDelay: 0, 
 			}
 		);
-
-		// Animation for .peep moving to the right
 		const collab2Animation = gsap.fromTo(
 			".collabs_items",
 			{ x: 0 },
@@ -27,8 +25,8 @@
 				x: "40%",
 				duration: 25,
 				ease: "linear",
-				repeat: -1, // Repeat indefinitely
-				repeatDelay: 0, // No delay before repeating
+				repeat: -1, 
+				repeatDelay: 0, 
 			}
 		);
 	});
