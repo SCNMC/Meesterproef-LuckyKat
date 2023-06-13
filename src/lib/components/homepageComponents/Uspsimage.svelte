@@ -13,54 +13,63 @@
 	import { gsap } from "gsap/dist/gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-
 	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);  
+		gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
-    let image = container.querySelector(".pap");
-  
-    let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          scrub: true,
-          pin: false,
-        },
-      }); 
-      tl.from(image, {
-        yPercent: -25,
-        ease: "none",
-      }).to(image, {
-        yPercent: 9,
-        ease: "none",
-      }); 
-  });
-  gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
-    let image = container.querySelector(".pok");
-  
-    let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          scrub: true,
-          pin: false,
-        },
-      }); 
-      tl.from(image, {
-        yPercent: -25,
-        ease: "none",
-      }).to(image, {
-        yPercent: 9,
-        ease: "none",
-      }); 
-  });
+		gsap.utils.toArray(".parralax-wrapper").forEach(function (container) {
+			let image = container.querySelector(".pap");
+
+			let tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: container,
+					scrub: true,
+					pin: false,
+				},
+			});
+			tl.from(image, {
+				yPercent: -25,
+				ease: "none",
+			}).to(image, {
+				yPercent: 9,
+				ease: "none",
+			});
+		});
+		gsap.utils.toArray(".parralax-wrapper").forEach(function (container) {
+			let image = container.querySelector(".pok");
+
+			let tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: container,
+					scrub: true,
+					pin: false,
+				},
+			});
+			tl.from(image, {
+				yPercent: -25,
+				ease: "none",
+			}).to(image, {
+				yPercent: 9,
+				ease: "none",
+			});
+		});
 	});
 </script>
 
 <section class="parralax-wrapper">
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<section class="images">
-		<img class="pok" loading="lazy" src={prismicH.asImageSrc(uspImage)} alt="#" />
-		<img class="pap" loading="lazy" src={prismicH.asImageSrc(uspsecondImage)} alt="#" />
+		<img
+			class="pok"
+			loading="lazy"
+			src={prismicH.asImageSrc(uspImage)}
+			alt="#"
+		/>
+		<img
+			class="pap"
+			loading="lazy"
+			src={prismicH.asImageSrc(uspsecondImage)}
+			alt="#"
+		/>
 	</section>
 
 	<div>
@@ -75,17 +84,16 @@ gsap.utils.toArray(".parralax-wrapper").forEach(function(container) {
 </section>
 
 <style>
+	.parralax-wrapper {
+		position: relative;
+		overflow: hidden;
+	}
 
-.parralax-wrapper{
-	position: relative;
-	overflow: hidden;
-}
-	
 	section {
 		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-z-index: -4;
+		z-index: -4;
 		/* margin-bottom: 8em; */
 	}
 	section > img {
@@ -93,13 +101,12 @@ z-index: -4;
 		height: 45vh;
 		object-fit: cover;
 		position: relative;
-		
 	}
 
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
-		position:sticky;
+		position: sticky;
 		margin-top: -3.2em;
 	}
 
@@ -149,7 +156,6 @@ z-index: -4;
 	}
 
 	@media (min-width: 40rem) {
-
 		h2::after {
 			border-width: 2.5px 0 0 1px;
 		}
