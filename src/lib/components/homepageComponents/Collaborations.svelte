@@ -1,10 +1,10 @@
 <script>
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
-	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 	import { onDestroy } from "svelte";
 
-	gsap.registerPlugin(ScrollTrigger);
+
 
 	onMount(() => {
 		const collabAnimation = gsap.fromTo(
