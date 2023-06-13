@@ -1,11 +1,8 @@
 <script>
 	import { onMount } from "svelte";
 	import { gsap } from "gsap/dist/gsap";
-
 	import { onDestroy } from "svelte";
-
-
-
+	
 	onMount(() => {
 		const collabAnimation = gsap.fromTo(
 			".collabs_item",
