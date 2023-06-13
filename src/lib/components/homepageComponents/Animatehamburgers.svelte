@@ -4,7 +4,7 @@
 		open = !open;
 	};
 	export let ariaLabel = "toggle menu";
-	export let width =70;
+	export let width = 70;
 </script>
 
 <button on:click={onClick} aria-expanded={open} aria-label={ariaLabel}>
@@ -33,9 +33,9 @@
 	:root {
 		--transition-duration: 400ms;
 	}
-p{
-	margin-top: -1em;
-}
+	p {
+		margin-top: -1em;
+	}
 	button {
 		cursor: pointer;
 		display: flex;
@@ -54,7 +54,6 @@ p{
 		position: relative;
 		z-index: 9999999;
 		color: black;
-
 	}
 	.top {
 		stroke-dasharray: 40 160;
@@ -79,9 +78,9 @@ p{
 		transform: rotate(90deg);
 	}
 
-    @media (min-width:50rem){
-        button{
-            display: none;
-        }
-    }
+	@media (min-width: 50rem) {
+		button {
+			display: none;
+		}
+	}
 </style>

@@ -8,12 +8,11 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		height:20vh;
+		height: 20vh;
 		gap: 1.5em;
 	}
 
-
- h1 {
+	h1 {
 		font-size: 2em;
 	}
 
@@ -24,13 +23,11 @@
 	}
 
 	@media (min-width: 60rem) {
-		section{
+		section {
 			height: 35vh;
 		}
 		h1 {
 			font-size: 4em;
 		}
 	}
-
-
 </style>

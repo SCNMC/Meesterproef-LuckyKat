@@ -24,10 +24,9 @@
 </section>
 
 <style>
-
-	.wrapper{
+	.wrapper {
 		position: relative;
-    overflow: hidden;
+		overflow: hidden;
 	}
 
 	section {
@@ -42,14 +41,13 @@
 		height: 45vh;
 		object-fit: cover;
 		position: relative;
-
 	}
 
 	div {
 		display: grid;
 		grid-template-columns: 1fr;
-	position:sticky;
-	margin-top: -3.2em;
+		position: sticky;
+		margin-top: -3.2em;
 	}
 
 	h2 {
@@ -98,8 +96,7 @@
 	}
 
 	@media (min-width: 40rem) {
-
-		p{
+		p {
 			padding: 1.5em;
 			text-align: center;
 		}
