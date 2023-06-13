@@ -1,5 +1,7 @@
 
-## We Love web PUB
+## We Love web PUB <img width="20" alt="Schermafbeelding 2023-06-13 om 20 27 17" src="https://github.com/SCNMC/Meesterproef-LuckyKat/assets/90189750/4bc9a081-0dd6-4052-9f0f-19b0e2f8ca81">
+
+
 
 Dit is een herdesign op de We love web Pub website.
 
