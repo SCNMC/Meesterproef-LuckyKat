@@ -113,7 +113,7 @@
 
 	@media (min-width: 40rem) {
 		p {
-			padding: 2.5em;
+			padding: 1.5em;
 			text-align: center;
 		}
 
