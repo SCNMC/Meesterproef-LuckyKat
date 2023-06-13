@@ -1,38 +1,44 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Luckykat <img width="25" alt="Schermafbeelding 2023-06-13 om 20 27 17" src="https://github.com/SCNMC/Meesterproef-LuckyKat/assets/90189750/4bc9a081-0dd6-4052-9f0f-19b0e2f8ca81">
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Dit is mijn websit voor Luckykat als onderdeel van de meesterproef.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+<img width="1679" alt="Schermafbeelding 2023-06-13 om 20 27 17" src="https://github.com/SCNMC/Meesterproef-LuckyKat/assets/90189750/9453e82f-cc7a-4c4b-8ba2-d4399401c41a">
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+[Wiki]()
+## Kenmerken
 
-## Building
+* SvelteKit
+* Prismic.io
+* Greensock
+* Formspree.io
 
-To create a production version of your app:
+## Installatie
 
-```bash
-npm run build
-```
+1. Clone of download deze repository
+2. Ga naar de root directory van het project.
+3. Gebruik `npm install` om de gebruikte dev dependencies en packages te installeren.
+4. Gebruik `npm run dev` om de web-server te starten. Deze is standaard bereikbar op poort `5173`.
 
-You can preview the production build with `npm run preview`.
+## Bronnen
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[SvelteKit Docs](https://kit.svelte.dev/docs/introduction)
+<br>
+[Prismic Docs](https://prismic.io/docs/technologies/svelte)
+<br>
+[Greensock Docs](https://greensock.com/docs/)
+
+
+
+
+
+## Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
