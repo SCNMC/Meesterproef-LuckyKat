@@ -17,7 +17,7 @@
 		gsap.registerPlugin(ScrollTrigger);
 
 		gsap.utils.toArray(".parralax-wrapper").forEach(function (container) {
-			let image = container.querySelector(".pap");
+			let image = container.querySelector(".rightImage");
 
 			let tl = gsap.timeline({
 				scrollTrigger: {
@@ -35,7 +35,7 @@
 			});
 		});
 		gsap.utils.toArray(".parralax-wrapper").forEach(function (container) {
-			let image = container.querySelector(".pok");
+			let image = container.querySelector(".leftImage");
 
 			let tl = gsap.timeline({
 				scrollTrigger: {
@@ -59,13 +59,13 @@
 	<h2>{@html prismicH.asText(uspTitle)}</h2>
 	<section class="images">
 		<img
-			class="pok"
+			class="leftImage"
 			loading="lazy"
 			src={prismicH.asImageSrc(uspImage)}
 			alt="#"
 		/>
 		<img
-			class="pap"
+			class="rightImage"
 			loading="lazy"
 			src={prismicH.asImageSrc(uspsecondImage)}
 			alt="#"
