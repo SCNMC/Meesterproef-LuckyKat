@@ -2,7 +2,7 @@
 	id="fs-frm"
 	name="simple-contact-form"
 	accept-charset="utf-8"
-	action=""
+	action="https://formspree.io/f/mbjenpro"
 	method="post"
 >
 	<fieldset id="fs-frm-inputs">
@@ -25,12 +25,12 @@
 			placeholder="Email@domain.tld"
 			required=""
 		/>
-		<label for="email-address">Message</label>
+		<label for="Message">Message</label>
 		<input
 			class="message"
-			type="email"
-			name="_replyto"
-			id="email-address"
+			type="text"
+			name="message"
+			id="message"
 			placeholder="Write your message"
 			required=""
 		/>

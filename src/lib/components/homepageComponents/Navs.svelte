@@ -59,7 +59,7 @@
 
 		top: 0;
 		left: 0;
-		z-index: -1;
+		z-index: 100;
 	}
 	nav > a {
 		margin: 0.5em;
